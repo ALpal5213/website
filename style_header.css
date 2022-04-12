@@ -1,0 +1,54 @@
+/*Code Written By: Adrian Lewis;
+Styles page for headers
+*/
+
+/**/
+h1 {
+	position: relative;
+	top: 0;
+	left: 0;
+	text-align: center;
+	z-index: 1;
+	font-family: "Papyrus", fantasy;
+	padding-top: 20px;
+}
+
+/**/
+header {
+	position: relative;
+	top: 0;
+	left: 0;
+	background: linear-gradient(to bottom, darkred, black);
+	height: 150px;
+	margin-top: -120px;
+}
+
+/*Styles for navigation links*/
+nav {
+	position: sticky;
+	top: 0;
+	background: black;
+	width: 100%;
+	padding-left: 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black black white black;
+	display: inline-block;
+}
+
+/**/
+nav li {
+	display: inline-block;
+	padding-left: 5px;
+	background: black;
+}
+
+/*These do not work properly*/
+a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+a:link {
+	color: white;
+}

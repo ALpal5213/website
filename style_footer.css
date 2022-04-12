@@ -1,0 +1,19 @@
+/*Code Written By: Adrian Lewis;
+Styles page for footers
+*/
+
+/*Style for main page footer*/
+#MainFooter {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	background: linear-gradient(to top, darkred, black);
+	color: whitesmoke;
+	text-align: center;
+}
+
+/*Put links inline*/
+footer > div > li {
+	display: inline-block;
+	padding-right: 5px;
+}
