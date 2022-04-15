@@ -4,32 +4,36 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Adrian's Website</title>
-	<link rel="stylesheet" href="style_body.css">
-	<link rel="stylesheet" href="style_header.css">
-	<link rel="stylesheet" href="style_footer.css">
-	<link rel="stylesheet" href="style_photos.css">
+	<link rel="stylesheet" href="styles/style_body.css">
+	<link rel="stylesheet" href="styles/style_header.css">
+	<link rel="stylesheet" href="styles/style_footer.css">
+	<link rel="stylesheet" href="styles/style_photos.css">
 </head>
 <body>
 <h1>Adrian's Site</h1>
 <header id="home">
 	<img src="images/RedPlasmaTriangle.jpg" width="150" height="150" 
-	alt="TestPhoto" id="HeaderPhoto"> 		
+	alt="MainPhoto" id="HeaderPhoto"> 		
 </header>
 
 <nav>
 	<ul>
-		<li><a href="#home"> Home </a></li>
-		<li><a href="test/test.html" target="_blank"> page1 </a></li>
-		<li><a href="test/test.html" target="_blank"> page2 </a></li>
+		<li id="first"><a href="#home"> HOME </a></li>
+		<li><a href="about/about.html"> ABOUT </a></li>
+		<li><a href="test/test.html"> page2 </a></li>
+		<li><a href="images/LakeSerene.jpg"> page3 </a></li>
 	</ul>
 </nav>
 
-<h2>Content Goes Here</h2>
-<div id="test">
-	<span>text</span>
+<div id="MainContent">
+	<h2>Introduction</h2>
+	<div>
+		Welcome to Adrian Lewis's website. This site is a work in progress and many of the functions are incomplete. Go ahead and explore whatever features are currently available.
+	</div>
 </div>
 
 <footer id="MainFooter">
+	<div>Connect With Me</div>
 	<div class="linksExternal">
 		<li>
 			<a href="https://www.linkedin.com/in/adrianlewis98"
@@ -40,11 +44,10 @@
 		<li>
 			<a href="https://twitter.com/TheAdrianLewis"
 			target="_blank" title="Check Out My Twitter">
-				<img src="images/TwitterImage.png" width="30" height="30" alt="Twitter">
+				<img src="images/TwitterImage.png" width="27" height="27" alt="Twitter">
 			</a>
 		</li>
 	</div>
-	<div> LewisWeb&copy;2022 </div>
 </footer>
 </body>
 </html>
