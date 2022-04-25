@@ -1,0 +1,93 @@
+/*Code Written By: Adrian Lewis;
+Styles page for headers
+*/
+
+
+
+/*Reset browser styles*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	position: relative;
+	top: 0;
+	left: 0;
+	text-align: center;
+	z-index: 1;
+	font-family: "Copperplate", fantasy;
+	font-size: 40px;
+	margin-top: 400px;
+}
+
+/**/
+header {
+	position: relative;
+	top: 0;
+	left: 0;
+	background: linear-gradient(to bottom, darkred, black);
+	width: 100%;
+	height: 150px;
+	margin-top: -100px;
+}
+
+/*Formatting for body*/
+body {
+	position: relative;
+	background: darkslategray;
+	color: white;
+	margin: 0;
+	padding: 0px;
+}
+
+/*Formatting for heading 2*/
+h2 {
+	font-size: 30px;
+	text-decoration: underline;
+	padding: 10px 0px 10px 0px;
+}
+
+/*Formatting for content*/
+div div {
+	border-style: solid;
+	border-width: 1px;
+	border-color: white white black white;
+	padding-bottom: 20px;
+}
+
+#MainContent {
+	margin-top: 50px;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom: 100px;
+	padding: 5px;
+	background: floralwhite;
+	color: black;
+	text-align: justify;
+	font-size: 20px;
+}
+
+#aboutphoto {
+	float: right;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black black black black;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+#Overview {
+	padding-bottom: 200px;
+}
+
+ul {
+	padding-left: 30px;
+	padding-bottom: 10px;
+}
+
+#Work p {
+	padding-left: 30px;
+	padding-bottom: 10px;
+}

@@ -2,8 +2,31 @@
 Styles page for headers
 */
 
-/**/
-/**/
+/*Reset browser styles*/
+
+
+h1 {
+	position: relative;
+	top: 0;
+	left: 0;
+	text-align: center;
+	z-index: 1;
+	font-family: "Copperplate", fantasy;
+	font-size: 40px;
+	margin-top: 60px;
+}
+
+#HeaderPhoto {
+	position: absolute;
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+/*Formatting for body*/
 body {
 	position: relative;
 	top: 0;
@@ -11,15 +34,16 @@ body {
 	background: darkslategray;
 	color: white;
 	margin: 0;
-	padding-top: 0px;
-	padding-bottom: 40px;
+	padding: 0px;
 }
 
+/*Formatting for heading 2*/
 h2 {
 	font-size: 30px;
 	text-decoration: underline;
 }
 
+/*Formatting for content*/
 div div {
 	border-style: solid;
 	border-width: 1px;
@@ -28,7 +52,7 @@ div div {
 }
 
 #MainContent {
-	margin-top: 50px;
+	margin-top: 200px;
 	margin-left: 100px;
 	margin-right: 100px;
 	margin-bottom: 100px;

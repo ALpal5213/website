@@ -4,21 +4,15 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>About Page</title>
-	<link rel="stylesheet" href="../styles/style_body.css">
-	<link rel="stylesheet" href="../styles/style_header.css">
-	<link rel="stylesheet" href="../styles/style_footer.css">
-	<link rel="stylesheet" href="../styles/style_photos.css">
+	<link rel="stylesheet" href="../styles/style_body_about.css">
+	<link rel="stylesheet" href="../styles/style_header_footer.css">
 </head>
 <body>
-<h1>About</h1>
-<header id="about">
-	<img src="../images/RedPlasmaTriangle.jpg" width="150" height="150" 
-	alt="MainPhoto" id="HeaderPhoto"> 		
-</header>
+<h1 id="about">About</h1>
 
 <nav>
 	<ul>
-		<li id="first"><a href="../index.html"> HOME </a></li>
+		<li id="home"><a href="../index.html"> HOME </a></li>
 		<li><a href="#about"> ABOUT </a></li>
 		<li><a href="../test/test.html"> page2 </a></li>
 		<li><a href="../images/LakeSerene.jpg"> page3 </a></li>
@@ -27,16 +21,63 @@
 
 <div id="MainContent">
 	<h2>Overview</h2>
-	<div>
-		Adrian J. Lewis was born on December 6, 1998. 
-		<!--<img src="../images/LakeSerene.jpg" width="200" height="150" alt="LakeSerene" id="photo">-->
+	<div id="Overview">
+		<img src="../images/adrianaboutphoto.jpg" width="200" height="250" alt="BioPhoto" 
+		id="aboutphoto">
+
+		<p> Adrian J. Lewis is currently serving as a Second Lieutenant in the United States Air Force. He has two kids and lives in a lovely picket fence house on mars.</p>
+		
 	</div>
 	<h2>Education</h2>
-	<div>
-		University of Washington - Seattle: Bachelor&nbsp;of&nbsp;Science&nbsp;(Double&nbsp;Major):
+	<div id="Education">
+		University of Washington - Seattle: Bachelor of Science (Double Major):
 		<ul>
 			<li>Electrical and Computer Engineering: Embedded Computing Systems</li>
 			<li>Physics: Comprehensive</li>
+		</ul>
+	</div>
+
+	<h2>Skills</h2>
+	<div id="Skills">
+		<ul>
+			<li>Languages</li>
+				<ul>
+					<li>Primary: English</li>
+					<li>Secondary: Japanese 日本語</li>
+				</ul>
+			<li>Hardware Development Languages</li>
+				<ul>
+					<li>SystemVerilog</li>
+					<li>Verilog</li>
+				</ul>
+			<li>Programming Languages</li>
+				<ul>
+					<li>Python</li>
+					<li>C</li>
+					<li>Java</li>
+					<li>NI: LabVIEW</li>
+				</ul>
+			<li>Web Development</li>
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JavaScript</li>
+				</ul>
+		</ul>
+	</div>
+	<h2>Work History</h2>
+	<div id="Work">
+		<ul>
+			<li>Classical and Quantum Nano-Systems Lab: 
+				<a href="https://arthurbarnard.com/" target="_blank">Dr. Arthur Barnard</a></li>
+				<p>
+					April 2020 - February 2022
+				</p>
+			<li>Avista Utilities Internship: 
+				<a href="https://www.myavista.com/about-us/working-at-avista" target="_blank">Student Engineering Development Program</a></li>
+				<p>
+					June 2018 - Sep 2018
+				</p>
 		</ul>
 	</div>
 </div>

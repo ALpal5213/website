@@ -1,0 +1,72 @@
+/*Code Written By: Adrian Lewis;
+Styles page for navigation links and footer
+*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/*Styles for navigation links*/
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: black;
+	width: 100%;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black black white black;
+	display: inline-block;
+	height: 60px;
+}
+
+#home {
+	padding-left: 50px;
+	padding-top: 20px;
+}
+
+/**/
+nav li {
+	display: inline-block;
+	padding-left: 60px;
+	padding-top: 20px;
+	background: black;
+	text-align: center;
+	font-size: 20px;
+	font-family: "Copperplate", fantasy;
+}
+
+/*These do not work properly*/
+nav a:link {
+	color: white;
+	text-decoration: none;
+}
+
+nav a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+
+
+/*Style for footer*/
+#footer {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	background: linear-gradient(to top, darkred, black);
+	color: whitesmoke;
+	text-align: center;
+	border-style: solid;
+	border-width: 1px;
+	border-color: white black black black;
+	padding-top: 5px;
+	height: 55px;
+}
+
+/*Put links inline*/
+footer > div > li {
+	display: inline-block;
+	padding-right: 5px;
+}
