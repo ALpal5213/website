@@ -2,28 +2,34 @@
 Styles page for headers
 */
 
-/*Reset browser styles*/
-
-
 h1 {
-	position: relative;
+	position: fixed;
 	top: 0;
 	left: 0;
+	color: black;
 	text-align: center;
-	z-index: 1;
+	z-index: 2;
 	font-family: "Copperplate", fantasy;
 	font-size: 40px;
 	margin-top: 60px;
 }
-
-#HeaderPhoto {
-	position: absolute;
-	top: 0;
+/*
+.wrapper {
+	position: relative;
+	padding-right: 100px;
+	width: 100%;
+	height: 800px;
+	background: black;
+}
+*/
+#HomePhoto {
+	position: fixed;
+	top: -160px;
 	left: 0;
-	position: absolute;
+	z-index: 1;
 	width: 100%;
 	height: 100%;
-	object-fit: contain;
+	object-fit: cover;
 }
 
 /*Formatting for body*/
@@ -37,33 +43,27 @@ body {
 	padding: 0px;
 }
 
-/*Formatting for heading 2*/
+/*Formatting for MainContent*/
+#MainContent {
+	position: relative;
+	padding: 20px;
+	padding-bottom: 1000px;
+	width: 100%;
+	margin-top: 750px;
+	background: darkslategray;
+	z-index: 3;
+}
+
+/*Formatting for heading 2 in MainContent*/
 h2 {
 	font-size: 30px;
 	text-decoration: underline;
+	padding-bottom: 20px;
 }
 
-/*Formatting for content*/
+/*Formatting for text in MainContent*/
 div div {
-	border-style: solid;
-	border-width: 1px;
-	border-color: white white black white;
-	padding-bottom: 10px;
-}
-
-#MainContent {
-	margin-top: 200px;
-	margin-left: 100px;
-	margin-right: 100px;
-	margin-bottom: 100px;
-	padding: 5px;
-	background: floralwhite;
-	color: black;
+	color: white;
 	text-align: justify;
 	font-size: 20px;
-}
-
-#photo {
-	position: absolute;
-	
 }

@@ -19,11 +19,7 @@ nav {
 	border-color: black black white black;
 	display: inline-block;
 	height: 60px;
-}
-
-#home {
-	padding-left: 50px;
-	padding-top: 20px;
+	z-index: 10;
 }
 
 /**/
@@ -48,13 +44,12 @@ nav a:visited {
 	text-decoration: none;
 }
 
-
-
 /*Style for footer*/
-#footer {
-	position: fixed;
+footer {
+	position: relative;
 	width: 100%;
 	bottom: 0;
+	left: 0;
 	background: linear-gradient(to top, darkred, black);
 	color: whitesmoke;
 	text-align: center;
@@ -62,7 +57,7 @@ nav a:visited {
 	border-width: 1px;
 	border-color: white black black black;
 	padding-top: 5px;
-	height: 55px;
+	height: 80px;
 }
 
 /*Put links inline*/
