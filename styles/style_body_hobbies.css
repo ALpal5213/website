@@ -1,0 +1,111 @@
+/*Code Written By: Adrian Lewis;
+CSS Styles page for home page
+*/
+
+h1 {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	color: white;
+	z-index: 2;
+	font-family: "Monaco", Monospace;
+	font-size: 40px;
+	margin-top: 60px;
+}
+
+/*Formatting for body*/
+body {
+	background: darkslategray;
+	color: white;
+}
+
+.row {
+	justify-content: center;
+}
+
+.content {
+	border: 2px solid red;
+	background: black;
+	height: 100px;
+	margin-bottom: 20px;
+	width: 80%;
+}
+
+.one {
+	margin-top: 150px;
+}
+
+.two {
+	
+}
+
+.three {
+	
+}
+
+.four {
+	
+}
+
+.five {
+	
+}
+
+.six {
+
+}
+
+.seven {
+	
+}
+
+.eight {
+	
+}
+
+@media (min-width: 992px) {
+	.content {
+		position: absolute;
+		height: 100px;
+		width: 100px;
+	}
+
+	.one {
+		top: 0px;
+		left: 50%;
+	}
+	.two {
+		top: 200px;
+		left: 25%;
+	}
+
+	.three {
+		top: 200px;
+		left: 75%;
+	}
+
+	.four {
+		top: 350px;
+		left: 20%;
+	}
+
+	.five {
+		top: 350px;
+		left: 80%;
+	}
+
+	.six {
+		top: 500px;
+		left: 25%;
+	}
+
+	.seven {
+		top: 500px;
+		left: 75%;
+	}
+
+	.eight {
+		top: 550px;
+		left: 50%;
+	}
+}

@@ -1,25 +1,17 @@
 /*Code Written By: Adrian Lewis;
-CSS Styles page for home page
+Styles page for headers
 */
 
 h1 {
 	position: fixed;
-	top: 10px;
-	left: 20px;
+	top: 0;
+	left: 0;
 	color: black;
+	text-align: center;
 	z-index: 2;
-	font-family: "Monaco", Monospace;
+	font-family: "Copperplate", fantasy;
 	font-size: 40px;
 	margin-top: 60px;
-}
-
-#top {
-	position: absolute;
-	top: 0;
-	margin-bottom: 750px;
-	background: yellow;
-	z-index: 20;
-	font-size: 40px;
 }
 
 #HomePhoto {
@@ -52,12 +44,12 @@ body {
 	margin-top: 750px;
 	background: darkslategray;
 	z-index: 3;
-	font-family: "Arial", sans-serif;
 }
 
 /*Formatting for heading 2 in MainContent*/
 h2 {
 	font-size: 30px;
+	text-decoration: underline;
 	padding-bottom: 20px;
 }
 
