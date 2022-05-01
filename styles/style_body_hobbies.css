@@ -19,40 +19,63 @@ body {
 	color: white;
 }
 
-.row {
-	justify-content: center;
+@media (max-width: 991px) {
+	h1 {
+		left: 50%;
+		margin-left: -75px;
+	}
+	
+	.row {
+		position: relative;
+		display: inline-block;
+		left: 50%;
+		margin-left: -75px;
+	}
 }
 
 .content {
-	border: 2px solid red;
 	background: black;
-	height: 100px;
 	margin-bottom: 20px;
-	width: 80%;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
 }
 
 .one {
 	margin-top: 150px;
+	background-image: url("../images/Lazy_Skiier.jpg");
+	background-size: cover;
+	background-position: -30px 0px;
 }
 
 .two {
-	
+	background-image: url("../images/table.jpg");
+	background-size: cover;
+	background-position: 0px 0px;
 }
 
 .three {
-	
+	background-image: url("../images/TokyoTower.jpg");
+	background-size: cover;
+	background-position: 2px 0px;
 }
 
 .four {
-	
+	background-image: url("../images/Moon.jpg");
+	background-size: cover;
+	background-position: 0px -55px;
 }
 
 .five {
-	
+	background-image: url("../images/SkyrimRedBlack.jpg");
+	background-size: cover;
+	background-position: -45px 0px;
 }
 
 .six {
-
+	background-image: url("../images/DN.jpg");
+	background-size: cover;
+	background-position: 0px 0px;
 }
 
 .seven {
@@ -66,8 +89,7 @@ body {
 @media (min-width: 992px) {
 	.content {
 		position: absolute;
-		height: 100px;
-		width: 100px;
+		margin-left: -75px;
 	}
 
 	.one {
@@ -75,37 +97,37 @@ body {
 		left: 50%;
 	}
 	.two {
-		top: 200px;
+		top: 225px;
 		left: 25%;
 	}
 
 	.three {
-		top: 200px;
+		top: 225px;
 		left: 75%;
 	}
 
 	.four {
-		top: 350px;
+		top: 450px;
 		left: 20%;
 	}
 
 	.five {
-		top: 350px;
+		top: 450px;
 		left: 80%;
 	}
 
 	.six {
-		top: 500px;
+		top: 675px;
 		left: 25%;
 	}
 
 	.seven {
-		top: 500px;
+		top: 675px;
 		left: 75%;
 	}
 
 	.eight {
-		top: 550px;
+		top: 750px;
 		left: 50%;
 	}
 }
