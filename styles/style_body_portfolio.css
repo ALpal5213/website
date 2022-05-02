@@ -40,8 +40,8 @@ h2 {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	width: 200px;
-	height: 250px;
+	width: 100%px;
+	height: 275px;
 }
 
 .overview {
