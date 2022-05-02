@@ -4,46 +4,36 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Adrian's Website</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="styles/style_header_footer.css">
 	<link rel="stylesheet" href="styles/style_body_home.css">
 </head>
 <body>
-<h1>Adrian Lewis's Personal Site</h1>
-<nav>
-	<ul>
-		<li><a href="index.html">HOME</a></li>
-		<li><a href="about/about.html">ABOUT</a></li>
-		<li><a href="hobbies/hobbies.html">HOBBIES</a></li>
-		<li><a href="test/test.html">CONNECT</a></li>
-	</ul>
-</nav>
+	<nav>
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="portfolio/portfolio.html">PORTFOLIO</a></li>
+			<li><a href="hobbies/hobbies.html">HOBBIES</a></li>
+			<li><a href="test/test.html">CONNECT</a></li>
+		</ul>
+	</nav>
 
-<div class="wrapper">
-	<img src="images/HorseTrackRainier.jpg" width="150" height="150" alt="MainPhoto" id="HomePhoto">
-</div>
-<div id="MainContent">
-	<h2>Home</h2>
-	<div>
-		Welcome to Adrian Lewis's website. This site is a work in progress and many of the functions and features are incomplete. Go ahead and explore whatever features are currently available.
+	<div class="container-fluid MainContent">
+		<div class="row">
+			<div class="col-md-12 HomePhoto">
+				<span class="intro1">Hey, I'm</span>
+				<span class="intro2">Adrian Lewis</span>
+			</div>
+		</div>
+		<div class="row">
+			<h1 class="col-xs-12">Home</h2>
+			<div class="col-xs-12 test">
+				Welcome to Adrian Lewis's website. This site is a work in progress and many of the functions and features are incomplete. Go ahead and explore whatever features are currently available.
+			</div>
+		</div>
 	</div>
-</div>
 
-<footer id="footer">
-	<div>Connect With Me</div>
-	<div class="linksExternal">
-		<li>
-			<a href="https://www.linkedin.com/in/adrianlewis98"
-			target="_blank" title="Check Out My Linkedin">
-				<img src="images/LinkedinImage_black.png" width="30" height="30" alt="Linkedin">
-			</a>
-		</li>
-		<li>
-			<a href="https://twitter.com/TheAdrianLewis"
-			target="_blank" title="Check Out My Twitter">
-				<img src="images/TwitterImage_black.png" width="27" height="27" alt="Twitter">
-			</a>
-		</li>
-	</div>
-</footer>
+	<script src="bootstrap/js/jquery-3.6.0.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

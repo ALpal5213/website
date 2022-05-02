@@ -7,7 +7,6 @@ h1 {
 	top: 10px;
 	left: 20px;
 	color: white;
-	z-index: 2;
 	font-family: "Monaco", Monospace;
 	font-size: 40px;
 	margin-top: 60px;
@@ -17,20 +16,6 @@ h1 {
 body {
 	background: darkslategray;
 	color: white;
-}
-
-@media (max-width: 991px) {
-	h1 {
-		left: 50%;
-		margin-left: -75px;
-	}
-	
-	.row {
-		position: relative;
-		display: inline-block;
-		left: 50%;
-		margin-left: -75px;
-	}
 }
 
 .content {
@@ -84,6 +69,20 @@ body {
 
 .eight {
 	
+}
+
+@media (max-width: 991px) {
+	h1 {
+		left: 50%;
+		margin-left: -80px;
+	}
+	
+	.row {
+		position: relative;
+		display: inline-block;
+		left: 50%;
+		margin-left: -75px;
+	}
 }
 
 @media (min-width: 992px) {
