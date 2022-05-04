@@ -4,8 +4,8 @@ Styles page for headers
 
 /*Formatting for body*/
 body {
-	background: darkslategray;
-	color: white;
+	background: #303030;
+	color: #ffffff;
 }
 
 /*Formatting for heading 2*/
@@ -43,13 +43,13 @@ div ul {
 }
 
 a:link, a:visited {
-	color: red;
+	color: #ff0000;
 	text-decoration: none;
 }
 
 .skills div div{
-	background-color: darkred;
-	border: 1px solid black;
+	background-color: #690000;
+	border: 1px solid #000000;
 	height: 120px;
 	font-weight: bold;
 	padding: 10px;

@@ -4,12 +4,12 @@ CSS Styles page for home page
 
 /*Formatting for body*/
 body {
-	background: darkslategray;
-	color: white;
+	background: #303030;
+	color: #ffffff;
 }
 
 .content {
-	background: black;
+	background: #000000;
 	margin-bottom: 20px;
 	height: 150px;
 	width: 150px;
@@ -32,19 +32,21 @@ body {
 .three {
 	background-image: url("../images/TokyoTower.JPG");
 	background-size: cover;
-	background-position: 2px 0px;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
 }
 
 .four {
 	background-image: url("../images/Moon.jpg");
 	background-size: cover;
-	background-position: 0px -55px;
+	background-position: 2px -55px;
 }
 
 .five {
 	background-image: url("../images/SkyrimRedBlack.jpg");
 	background-size: cover;
-	background-position: -45px 0px;
+	background-repeat: no-repeat;
+	background-position: -45px 2px;
 }
 
 .six {
@@ -54,11 +56,15 @@ body {
 }
 
 .seven {
-	
+	background-image: url("../images/DN.jpg");
+	background-size: cover;
+	background-position: 0px 0px;
 }
 
 .eight {
-	
+	background-image: url("../images/DN.jpg");
+	background-size: cover;
+	background-position: 0px 0px;
 }
 
 @media (max-width: 991px) {
