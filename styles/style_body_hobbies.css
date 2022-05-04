@@ -1,5 +1,5 @@
 /*Code Written By: Adrian Lewis;
-CSS Styles page for home page
+CSS Styles page for hobbies page
 */
 
 /*Formatting for body*/
@@ -56,13 +56,13 @@ body {
 }
 
 .seven {
-	background-image: url("../images/DN.jpg");
+	background-image: url("../images/panda.jpg");
 	background-size: cover;
-	background-position: 0px 0px;
+	background-position: -60px 0px;
 }
 
 .eight {
-	background-image: url("../images/DN.jpg");
+	background-image: url("../images/brainchip.jpg");
 	background-size: cover;
 	background-position: 0px 0px;
 }

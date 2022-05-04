@@ -1,0 +1,38 @@
+/*Code Written By: Adrian Lewis;
+Styles page for social media page
+*/
+
+/*Formatting for body*/
+body {
+	background: #303030;
+	color: #ffffff;
+}
+
+/*Formatting for heading 2*/
+h2 {
+	font-size: 30px;
+	padding: 10px 0px 10px 15px;
+}
+
+.socialmedia {
+	margin-top: 100px;
+}
+
+a:link, a:visited {
+	color: #ff0000;
+	text-decoration: none;
+}
+
+.linkedin {
+	position: relative;
+	top: 0;
+	left: 0;
+	font-size: 20px;
+}
+
+.twitter {
+	position: relative;
+	top: 4px;
+	left: 8px;
+	font-size: 20px;
+}
