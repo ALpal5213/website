@@ -2,13 +2,6 @@
 CSS Styles page for home page
 */
 
-h1 {
-	color: White;
-	font-family: "Monaco", Monospace;
-	font-size: 40px;
-	margin-top: 60px;
-}
-
 /*Formatting for body*/
 body {
 	background: darkslategray;

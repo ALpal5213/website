@@ -7,17 +7,29 @@ Styles page for navigation links and footer
 	padding: 0;
 }
 
+h1 {
+	position: fixed;
+	top: 5px;
+	left: 15px;
+	color: white;
+	font-family: "Monaco", Monospace;
+	font-size: 30px;
+	z-index: 3;
+	width: 20%;
+}
+
 .navbar {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	height: 60px;
+	height: 80px;
 	border: 0;
 	background: black;
 	z-index: 2;
 	font-family: "Arial", sans-serif;
 	font-weight: bold;
 	font-size: 20px;
+	border-radius: 0;
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
@@ -25,16 +37,28 @@ Styles page for navigation links and footer
 }
 
 #nav-dropdown {
+	position: absolute;
+	right: 10px;
 	background: black;
 	border: 0;
 	text-align: right;
+	width: 520px;
+	padding-top: 20px;
+}
+
+@media (max-width: 767px) {
+	.navbar {
+		height: 60px;
+	}
+
+	#nav-dropdown {
+		width: 767px;
+
+	}
 }
 
 #nav-list {
-	text-align: right;
-}
-
-#nav-list a {
+	border: 0;
 	text-align: right;
 }
 
