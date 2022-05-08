@@ -8,7 +8,13 @@ body {
 	color: #ffffff;
 }
 
+.main {
+	position: relative;
+	margin-top: 150px;
+}
+
 .content {
+	position: relative;
 	background: #000000;
 	margin-bottom: 20px;
 	height: 150px;
@@ -17,7 +23,6 @@ body {
 }
 
 .one {
-	margin-top: 150px;
 	background-image: url("../images/Lazy_Skiier.jpg");
 	background-size: cover;
 	background-position: -30px 0px;
@@ -50,9 +55,9 @@ body {
 }
 
 .six {
-	background-image: url("../images/DN.jpg");
+	background-image: url("../images/deathnote.jpg");
 	background-size: cover;
-	background-position: 0px 0px;
+	background-position: -30px 0px;
 }
 
 .seven {
@@ -67,57 +72,61 @@ body {
 	background-position: 0px 0px;
 }
 
-@media (max-width: 991px) {
-	.row {
-		position: relative;
+@media (max-width: 767px) {
+	.main {
 		display: inline-block;
 		left: 50%;
 		margin-left: -75px;
 	}
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
+	.main .row {
+		height: 750px;
+	}
+
 	.content {
-		position: absolute;
 		margin-left: -75px;
+		margin-bottom: 0px;
 	}
 
 	.one {
 		top: 0px;
 		left: 50%;
 	}
+
 	.two {
-		top: 225px;
+		top: -75px;
 		left: 25%;
 	}
 
 	.three {
-		top: 225px;
+		top: -225px;
 		left: 75%;
 	}
 
 	.four {
-		top: 450px;
+		top: -150px;
 		left: 20%;
 	}
 
 	.five {
-		top: 450px;
+		top: -300px;
 		left: 80%;
 	}
 
 	.six {
-		top: 675px;
+		top: -225px;
 		left: 25%;
 	}
 
 	.seven {
-		top: 675px;
+		top: -375px;
 		left: 75%;
 	}
 
 	.eight {
-		top: 750px;
+		top: -450px;
 		left: 50%;
 	}
 }

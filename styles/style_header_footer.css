@@ -1,6 +1,7 @@
 /*Code Written By: Adrian Lewis;
-Styles page for navigation bar
+CSS Styles page for navigation bar
 */
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -74,4 +75,14 @@ h1 {
 
 #nav-list a:hover {
 	color: #690000;
+}
+
+footer {
+	position: relative;
+	height: 20px;
+	bottom: 0;
+}
+
+.copyright {
+	text-align: center;
 }
