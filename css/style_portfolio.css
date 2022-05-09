@@ -15,7 +15,7 @@ h2 {
 }
 
 /*Formatting for content*/
-.row {
+.work, .overview, .skills, .education {
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
 	margin: 0;

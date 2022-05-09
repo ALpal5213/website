@@ -20,6 +20,23 @@ body {
 	height: 150px;
 	width: 150px;
 	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 10px 5px  20px black;
+}
+
+.content div {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+	background-color: black;
+	height: 35px;
+	opacity: 75%;
+}
+
+.content:hover {
+	box-shadow: none;
+	filter: brightness(1.15);
 }
 
 .one {
@@ -82,7 +99,7 @@ body {
 
 @media (min-width: 768px) {
 	.main .row {
-		height: 750px;
+		height: 755px;
 	}
 
 	.content {
