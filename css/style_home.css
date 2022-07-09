@@ -30,9 +30,9 @@ body {
 
 .type {
 	position: absolute;
-	width: 330px;
+	width: 310px;
 	height: 125px;
-	top: 60px;
+	top: 40px;
 	right: 20%;
 }
 
@@ -49,8 +49,8 @@ body {
 .intro2 {
 	position: absolute;
 	top: 40px;
-	left: 50px;
-	width: 100%;
+	left: 35px;
+	width: 120px;
 	color: #ffffff;
 	font-family: "Monaco", Monospace;
 	font-size: 40px;
@@ -72,14 +72,22 @@ body {
 	}
 }
 
+@media (max-width: 577px) {
+	.type {
+		right: 0;
+	}
+}
+
 .intro2 {
 	overflow: hidden;
-	border-right: .1em solid white;
+	border-right: .1em solid #ff0000;
 	white-space: nowrap;
 	width: 0;
 	animation: 
 		typing 2s steps(20, end) forwards,
-		blink .8s infinite;
+		blink .8s infinite,
+		hideAnimation 0s ease-in 2s;
+		animation-fill-mode: forwards;
 }
 
 @keyframes typing {
@@ -89,7 +97,14 @@ body {
 
 @keyframes blink {
 	from {border-color: transparent}
-	to {border-color: white}
+	to {border-color: #ff0000}
+}
+
+@keyframes hideAnimation {
+	to {
+		border: none;
+		visibility: visible;
+	}
 }
 
 .Opener {

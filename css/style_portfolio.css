@@ -35,10 +35,10 @@ h2 {
 	height: 275px;
 }
 
-@media (max-width: 993px) {
+@media (max-width: 577px) {
 	.portrait {
-		width: 170px;
-		height: 250px;
+		width: 150px;
+		height: 210px;
 	}
 }
 
