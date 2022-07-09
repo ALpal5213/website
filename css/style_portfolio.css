@@ -15,7 +15,7 @@ h2 {
 }
 
 /*Formatting for content*/
-.work, .overview, .skills, .education {
+.work, .overview, .skills, .education, .awards {
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
 	margin: 0;
@@ -23,17 +23,27 @@ h2 {
 }
 
 .portrait {
-	margin-bottom: 10px;
 	background-image: url("../images/adrianaboutphoto.jpg");
-	background-size: contain;
+	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	width: 100%px;
+	border: 1px solid #000000;
+	border-radius: 10px;
+	margin: auto;
+	margin-bottom: 10px;
+	width: 200px;
 	height: 275px;
 }
 
+@media (max-width: 993px) {
+	.portrait {
+		width: 170px;
+		height: 250px;
+	}
+}
+
 .overview {
-	margin-top: 100px;
+	margin-top: 80px;
 	padding-bottom: 0px;
 }
 
@@ -43,7 +53,7 @@ div ul {
 }
 
 a:link, a:visited {
-	color: #ff0000;
+	color: #cc0000;
 	text-decoration: none;
 }
 
@@ -54,9 +64,21 @@ a:link, a:visited {
 	font-weight: bold;
 	padding: 10px;
 	margin-bottom: 10px;
-	border-radius: 20%;
+	border-radius: 20px;
 }
 
 .skills div ul {
 	font-weight: normal;
+}
+
+.education div div {
+	background-color: #7E7E7E;
+	border: 1px solid #000000;
+	border-radius: 20px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.awards {
+	border: none;
 }

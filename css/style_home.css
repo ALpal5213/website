@@ -17,32 +17,91 @@ body {
 }
 
 .HomePhoto {
+	margin: auto;
 	margin-top: 60px;
 	height: 600px;
-	background-image: url("/images/HorseTrackRainier.jpg");
+	background-image: url("/images/AdrianSpeech.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	/*background-position: 0px 50px;*/
+	display: inline-block;
+}
+
+.type {
+	position: absolute;
+	width: 330px;
+	height: 125px;
+	top: 60px;
+	right: 20%;
 }
 
 .intro1 {
 	position: absolute;
-	top: 70px;
-	left: 15%;
+	top:0px;
+	left: 0px;
+	width: 100%;
 	color: #ffffff;
 	font-family: "Monaco", Monospace;
 	font-size: 25px;
-	margin-top: 60px;
 }
 
 .intro2 {
 	position: absolute;
-	top: 120px;
-	left: 20%;
+	top: 40px;
+	left: 50px;
+	width: 100%;
 	color: #ffffff;
 	font-family: "Monaco", Monospace;
 	font-size: 40px;
-	margin-top: 60px;
+}
+
+@media (max-width: 993px) {
+	.type {
+		right: 110px;
+	}
+}
+
+@media (max-width: 767px) {
+	.HomePhoto {
+		background-position: right -300px bottom -40px;
+	}
+
+	.type {
+		right: 15%;
+	}
+}
+
+.intro2 {
+	overflow: hidden;
+	border-right: .1em solid white;
+	white-space: nowrap;
+	width: 0;
+	animation: 
+		typing 2s steps(20, end) forwards,
+		blink .8s infinite;
+}
+
+@keyframes typing {
+	from {width: 0}
+	to {width: 270px}
+}
+
+@keyframes blink {
+	from {border-color: transparent}
+	to {border-color: white}
+}
+
+.Opener {
+	padding-top: 20px;
+	padding-bottom: 100px;
+}
+
+#test {
+	position: relative;
+	z-index: 20;
+	width: 100%;
+	height: 100px;
+	background: black;
+	color: white;
 }
