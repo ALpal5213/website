@@ -11,17 +11,16 @@ body {
 /*Formatting for heading 2*/
 h2 {
 	font-size: 30px;
-	padding: 10px 0px 10px 15px;
+	padding-left: 15px;
 }
 
 /*Formatting for content*/
 .work, .overview, .skills, .education, .awards {
-	border-bottom-style: solid;
-	border-bottom-width: 1px;
 	margin: 0;
 	padding-bottom: 10px;
 }
 
+/*Format photo in overview*/
 .portrait {
 	background-image: url("../images/adrianaboutphoto.jpg");
 	background-size: cover;
@@ -43,8 +42,11 @@ h2 {
 }
 
 .overview {
-	margin-top: 80px;
-	padding-bottom: 0px;
+	margin-top: 70px;
+}
+
+.section1 {
+	padding-bottom: 10px;
 }
 
 div ul {
@@ -57,26 +59,56 @@ a:link, a:visited {
 	text-decoration: none;
 }
 
-.skills div div{
-	background-color: #690000;
+.dropdown-content div div{
+	background-color: #7E7E7E;
 	border: 1px solid #000000;
-	height: 120px;
+	height: 100%;
 	font-weight: bold;
-	padding: 10px;
+	padding: 10px 10px 0px 10px;
 	margin-bottom: 10px;
 	border-radius: 20px;
 }
 
-.skills div ul {
+.dropdown-content div ul {
 	font-weight: normal;
 }
 
-.education div div {
-	background-color: #7E7E7E;
-	border: 1px solid #000000;
-	border-radius: 20px;
-	padding: 10px;
-	margin-bottom: 10px;
+.dropdown-button {
+	display: block;
+	width: 95%;
+	border: none;
+	cursor: pointer;
+	background-color: #690000;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: left;
+	transition: background 0.2s;
+	margin: auto;
+}
+
+.dropdown-button::after {
+	content: '\25be';
+	float: right;
+	padding-right: 5%;
+	transform: scale(1.5);
+}
+
+.dropdown-button--active {
+	background: #690000;
+}
+
+.dropdown-button--active::after {
+	content: '\25b4';
+}
+
+.dropdown-content {
+	overflow: hidden;
+	max-height: 0px;
+	transition: max-height 0.2s;
+	padding-top: 5px;
 }
 
 .awards {

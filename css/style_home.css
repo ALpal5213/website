@@ -74,7 +74,7 @@ body {
 
 @media (max-width: 577px) {
 	.type {
-		right: 0;
+		right: 5px;
 	}
 }
 
