@@ -53,7 +53,7 @@ body {
 	width: 120px;
 	color: #ffffff;
 	font-family: "Monaco", Monospace;
-	font-size: 40px;
+	font-size: 30px;
 }
 
 @media (max-width: 993px) {
@@ -92,7 +92,7 @@ body {
 
 @keyframes typing {
 	from {width: 0}
-	to {width: 270px}
+	to {width: 200px}
 }
 
 @keyframes blink {
