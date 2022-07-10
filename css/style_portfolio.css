@@ -92,7 +92,7 @@ a:link, a:visited {
 .dropdown-button::after {
 	content: '\25be';
 	float: right;
-	padding-right: 5%;
+	padding-right: 5px;
 	transform: scale(1.5);
 }
 
