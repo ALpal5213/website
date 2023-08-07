@@ -1,4 +1,6 @@
 import { Container, Col, Row } from 'react-bootstrap'
+import { useContext }  from 'react'
+import { AppContext } from '../App.js'
 import { 
   RedDividerVertical,
   RedDividerHorizontal, 
@@ -11,6 +13,16 @@ import {
 } from '../styles/styled-components.js'
 
 export const NavbarSmallScreen = () => {
+  const {selectedView, setSelectedView} = useContext(AppContext);
+
+  const handleClickScroll = () => {
+    const element = document.getElementById('scroll-here');
+    if (element) {
+      console.log('hi');
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <Container fluid style={{
       color: 'white',
@@ -18,23 +30,32 @@ export const NavbarSmallScreen = () => {
       position: 'absolute',
       bottom: '10px'
     }}>
-      <Row>
+      <Row id="top-navbar">
         <RedDividerHorizontal />
       </Row>
       <Row>
-        <Col xs={4}>{
+        <Col xs={4} onClick={() => {
+          selectedView === 'career' ? setSelectedView('none') : setSelectedView('career');
+          handleClickScroll();
+        }}>{
           <div className='menu-icon-mobile'>
             <BriefcaseIconSmall />
             <div>Career</div>
           </div>
         }</Col>
-        <Col xs={4}>{
+        <Col xs={4} onClick={() => {
+          selectedView === 'education' ? setSelectedView('none') : setSelectedView('education');
+          handleClickScroll();
+        }}>{
           <div className='menu-icon-mobile'>
             <EducationIconSmall />
             <div>Education</div>
           </div>
         }</Col>
-        <Col xs={4}>{
+        <Col xs={4} onClick={() => {
+          selectedView === 'contact' ? setSelectedView('none') : setSelectedView('contact');
+          handleClickScroll();
+        }}>{
           <div className='menu-icon-mobile'>
             <ContactIconSmall />
             <div>Contact Me</div>

@@ -9,15 +9,16 @@ export const MainCarouselMobile = () => {
       height: '60vh',
       boxShadow: '10px 5px 10px black',
       borderRadius: '10px',
-      marginTop: '0%'
+      marginTop: '0%',
+      marginBottom: '20%',
     }}>
       <Carousel.Item style={{
         position: 'relative',
         left: '-20px'
       }}>
         <img 
-          // src="website/AdrianSpeechMobile.jpg"
-          src="AdrianSpeechMobile.jpg" 
+          src="website/AdrianSpeechMobile.jpg"
+          // src="AdrianSpeechMobile.jpg" 
           alt="Adrian Giving a Speech" 
           width={'120%'}
         />
@@ -27,8 +28,8 @@ export const MainCarouselMobile = () => {
         left: '-20px'
       }}>
         <img 
-          // src="website/AdrianWithWifeMobile.jpg" 
-          src="AdrianWithWifeMobile.jpg" 
+          src="website/AdrianWithWifeMobile.jpg" 
+          // src="AdrianWithWifeMobile.jpg" 
           alt="Adrian With his Wife" 
           width={'120%'}
         />
