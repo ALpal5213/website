@@ -17,8 +17,8 @@ export const MainCarouselMobile = () => {
         left: '-20px'
       }}>
         <img 
-          src="website/AdrianSpeechMobile.jpg"
-          // src="AdrianSpeechMobile.jpg" 
+          // src="website/AdrianSpeechMobile.jpg"
+          src="AdrianSpeechMobile.jpg" 
           alt="Adrian Giving a Speech" 
           width={'120%'}
         />
@@ -28,8 +28,8 @@ export const MainCarouselMobile = () => {
         left: '-20px'
       }}>
         <img 
-          src="website/AdrianWithWifeMobile.jpg" 
-          // src="AdrianWithWifeMobile.jpg" 
+          // src="website/AdrianWithWifeMobile.jpg" 
+          src="AdrianWithWifeMobile.jpg" 
           alt="Adrian With his Wife" 
           width={'120%'}
         />

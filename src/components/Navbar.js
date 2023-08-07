@@ -17,10 +17,12 @@ export const NavbarSmallScreen = () => {
 
   const handleClickScroll = () => {
     const element = document.getElementById('scroll-here');
-    if (element) {
-      console.log('hi');
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    setTimeout(() => {
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 500);
+      
   };
 
   return (
