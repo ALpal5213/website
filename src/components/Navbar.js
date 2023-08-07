@@ -23,19 +23,19 @@ export const NavbarSmallScreen = () => {
       </Row>
       <Row>
         <Col xs={4}>{
-          <div className='menu-icon'>
+          <div className='menu-icon-mobile'>
             <BriefcaseIconSmall />
             <div>Career</div>
           </div>
         }</Col>
         <Col xs={4}>{
-          <div className='menu-icon'>
+          <div className='menu-icon-mobile'>
             <EducationIconSmall />
             <div>Education</div>
           </div>
         }</Col>
         <Col xs={4}>{
-          <div className='menu-icon'>
+          <div className='menu-icon-mobile'>
             <ContactIconSmall />
             <div>Contact Me</div>
           </div>
@@ -66,19 +66,19 @@ export const NavbarLargeScreen = () => {
         padding: '40px 0 40px 0'
       }}>
         <Col xs={12}>{
-          <div className='menu-icon'>
+          <div className='menu-icon-desktop'>
             <BriefcaseIconLarge />
             <div>Career</div>
           </div>
         }</Col>
         <Col xs={12}>{
-          <div className='menu-icon'>
+          <div className='menu-icon-desktop'>
             <EducationIconLarge />
             <div>Education</div>
           </div>
         }</Col>
         <Col xs={12}>{
-          <div className='menu-icon'>
+          <div className='menu-icon-desktop'>
             <ContactIconLarge />
             <div>Contact Me</div>
           </div>
