@@ -12,14 +12,14 @@ export const MainCarouselMobile = () => {
     }}>
       <Carousel.Item >
         <img 
-          src="/AdrianSpeechMobile.jpg" 
+          src="AdrianSpeechMobile.jpg" 
           alt="Adrian Giving a Speech" 
           width={'100%'}
         />
       </Carousel.Item>
       <Carousel.Item >
         <img 
-          src="/AdrianWithWifeMobile.jpg" 
+          src="AdrianWithWifeMobile.jpg" 
           alt="Adrian With his Wife" 
           width={'100%'}
         />
