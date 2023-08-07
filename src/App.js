@@ -7,7 +7,7 @@ export const AppContext = createContext();
 function App() {
   return (
     <AppContext.Provider value={{}}>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path='/' element={<Home/>}/>
         </Routes>
