@@ -42,10 +42,8 @@ const Home = () => {
         </Col>
       </Row>   
       {!isDesktop &&<Row><NavbarSmallScreen/></Row>}
-      <Row id='scroll-here'></Row>
       {/* Add row with state. If career is selected, state is career */}
       {selectedView != 'none' && <Row  style={{marginTop: '30%'}}>
-        <RedDividerHorizontal/>
         {selectedView == 'career' && <Career/>}
         {selectedView == 'education' && <Education/>}
         {selectedView == 'contact' && <Career/>}

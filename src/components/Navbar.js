@@ -16,7 +16,7 @@ export const NavbarSmallScreen = () => {
   const {selectedView, setSelectedView} = useContext(AppContext);
 
   const handleClickScroll = () => {
-    const element = document.getElementById('scroll-here');
+    const element = document.getElementById('top-navbar');
     setTimeout(() => {
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
