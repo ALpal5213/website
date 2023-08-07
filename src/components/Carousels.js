@@ -59,7 +59,7 @@ export const MainCarouselDesktop = () => {
       <Carousel.Item >
         <img 
           // src="website/AdrianWithWifeDesktop.jpg" 
-          src="AdrianWithWifDesktop.jpg"
+          src="AdrianWithWifeDesktop.jpg"
           alt="Adrian With his Wife" 
           width={'100%'}
         />
