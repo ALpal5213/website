@@ -31,13 +31,13 @@ const Home = () => {
         <Col xs={12} md={8} style={{
           display: 'flex',
           justifyContent: 'center',
-          
         }}>
           {isDesktop && <MainCarouselDesktop/>}
           {!isDesktop && <MainCarouselMobile/>}
         </Col>
       </Row>   
       {!isDesktop &&<Row><NavbarSmallScreen/></Row>}
+      {/* Add row with state. If career is selected, state is career */}
     </Container>
   );
 }
