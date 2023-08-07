@@ -16,7 +16,7 @@ export const NavbarSmallScreen = () => {
       color: 'white',
       textAlign: 'center',
       position: 'absolute',
-      bottom: '0px'
+      bottom: '10px'
     }}>
       <Row>
         <RedDividerHorizontal />

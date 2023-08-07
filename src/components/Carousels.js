@@ -10,18 +10,26 @@ export const MainCarouselMobile = () => {
       borderRadius: '10px',
       marginTop: '0%'
     }}>
-      <Carousel.Item >
+      <Carousel.Item style={{
+        position: 'relative',
+        left: '-30px'
+      }}>
         <img 
+          // src="website/AdrianSpeechMobile.jpg"
           src="AdrianSpeechMobile.jpg" 
           alt="Adrian Giving a Speech" 
-          width={'100%'}
+          width={'120%'}
         />
       </Carousel.Item>
-      <Carousel.Item >
+      <Carousel.Item style={{
+        position: 'relative',
+        left: '-30px'
+      }}>
         <img 
+          // src="website/AdrianWithWifeMobile.jpg" 
           src="AdrianWithWifeMobile.jpg" 
           alt="Adrian With his Wife" 
-          width={'100%'}
+          width={'120%'}
         />
       </Carousel.Item>
     </Carousel>
