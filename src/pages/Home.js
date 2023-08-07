@@ -38,6 +38,7 @@ const Home = () => {
       </Row>   
       {!isDesktop &&<Row><NavbarSmallScreen/></Row>}
       {/* Add row with state. If career is selected, state is career */}
+      <Row></Row>
     </Container>
   );
 }
