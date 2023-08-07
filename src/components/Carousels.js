@@ -1,11 +1,7 @@
 import { Container, Col, Row, Carousel } from 'react-bootstrap';
 
-
-
-// const url = 'website';
-const url = '';
-
 export const MainCarouselMobile = () => {
+
   return (
     <Carousel fade controls={false} variant={'dark'} style={{
       overflow: 'hidden',
@@ -20,7 +16,8 @@ export const MainCarouselMobile = () => {
         left: '-20px'
       }}>
         <img 
-          src={`${url}/AdrianSpeechMobile.jpg`}
+          // src="website/AdrianSpeechMobile.jpg"
+          src="AdrianSpeechMobile.jpg" 
           alt="Adrian Giving a Speech" 
           width={'120%'}
         />
@@ -30,7 +27,8 @@ export const MainCarouselMobile = () => {
         left: '-20px'
       }}>
         <img 
-          src={`${url}/AdrianWithWifeMobile.jpg`} 
+          src="website/AdrianWithWifeMobile.jpg" 
+          // src="AdrianWithWifeMobile.jpg" 
           alt="Adrian With his Wife" 
           width={'120%'}
         />
@@ -51,14 +49,16 @@ export const MainCarouselDesktop = () => {
     }}>
       <Carousel.Item >
         <img 
-          src={`${url}/AdrianSpeechMobile.jpg`}
+          src="website/AdrianSpeechMobile.jpg"
+          // src="AdrianSpeechMobile.jpg" 
           alt="Adrian Giving a Speech" 
           width={'100%'}
         />
       </Carousel.Item>
       <Carousel.Item >
         <img 
-          src={`${url}/AdrianWithWifeMobile.jpg`} 
+          src="website/AdrianWithWifeMobile.jpg" 
+          // src="AdrianWithWifeMobile.jpg"
           alt="Adrian With his Wife" 
           width={'100%'}
         />
