@@ -22,7 +22,6 @@ export const NavbarSmallScreen = () => {
         element.scrollIntoView({ behavior: 'smooth' });
       }
     }, 500);
-      
   };
 
   return (
@@ -69,6 +68,17 @@ export const NavbarSmallScreen = () => {
 }
 
 export const NavbarLargeScreen = () => {
+  const {selectedView, setSelectedView} = useContext(AppContext);
+
+  const handleClickScroll = () => {
+    setTimeout(() => {
+      const element = document.getElementById('top-content');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 500);
+  };
+
   return (
     <Container fluid style={{
       color: 'white',
@@ -89,19 +99,28 @@ export const NavbarLargeScreen = () => {
         padding: '40px 0 40px 0'
       }}>
         <Col xs={12}>{
-          <div className='menu-icon-desktop'>
+          <div className='menu-icon-desktop' onClick={() => {
+            selectedView === 'career' ? setSelectedView('none') : setSelectedView('career');
+            handleClickScroll();
+          }}>
             <BriefcaseIconLarge />
             <div>Career</div>
           </div>
         }</Col>
         <Col xs={12}>{
-          <div className='menu-icon-desktop'>
+          <div className='menu-icon-desktop' onClick={() => {
+            selectedView === 'education' ? setSelectedView('none') : setSelectedView('education');
+            handleClickScroll();
+          }}>
             <EducationIconLarge />
             <div>Education</div>
           </div>
         }</Col>
         <Col xs={12}>{
-          <div className='menu-icon-desktop'>
+          <div className='menu-icon-desktop' onClick={() => {
+            selectedView === 'contact' ? setSelectedView('none') : setSelectedView('contact');
+            handleClickScroll();
+          }}>
             <ContactIconLarge />
             <div>Contact Me</div>
           </div>

@@ -6,7 +6,9 @@ body {
 }
 
 .menu-icon-desktop:hover {
-  margin-top: -10px;
-  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.menu-icon-mobile:hover {
   cursor: pointer;
 }

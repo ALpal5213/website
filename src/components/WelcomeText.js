@@ -9,12 +9,12 @@ export const DesktopWelcome = () => {
       textAlign: 'center'
     }}>
       <Row style={{
-        fontSize: '8vh',
+        fontSize: '7vh',
       }}>
         <Col>Welcome!</Col>
       </Row>
       <Row style={{
-        fontSize: '4vh',
+        fontSize: '3vh',
       }}>
         <TypeAnimation
           sequence={[

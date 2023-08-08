@@ -14,26 +14,27 @@ import { Education } from '../components/Education.js';
 
 const Home = () => {
   const {selectedView, setSelectedView} = useContext(AppContext);
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth < 768 ? false : true);
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth < 992 ? false : true);
 
   useEffect(() => {
     const handleResize = () => {
-      window.innerWidth < 768 ? setIsDesktop(false) : setIsDesktop(true);
+      window.innerWidth < 992 ? setIsDesktop(false) : setIsDesktop(true);
     }
     window.addEventListener('resize', handleResize);
   })
 
   return (
     <Container fluid style={{ 
-      color: 'white'
+      color: 'white',
+      // position: 'relative'
       }}>
       <Row>
         {isDesktop && <Col md={1}><NavbarLargeScreen/></Col>}
-        <Col xs={12} md={3}>
+        <Col xs={12} lg={3}>
           {isDesktop && <DesktopWelcome/>}
           {!isDesktop && <MobileWelcome/>}
         </Col>
-        <Col xs={12} md={8} style={{
+        <Col xs={12} lg={8} style={{
           display: 'flex',
           justifyContent: 'center',
         }}>
@@ -42,8 +43,12 @@ const Home = () => {
         </Col>
       </Row>   
       {!isDesktop &&<Row><NavbarSmallScreen/></Row>}
-      {/* Add row with state. If career is selected, state is career */}
-      {selectedView != 'none' && <Row  style={{marginTop: '30%'}}>
+      {selectedView != 'none' && !isDesktop && <Row>
+        {selectedView == 'career' && <Career/>}
+        {selectedView == 'education' && <Education/>}
+        {selectedView == 'contact' && <Career/>}
+      </Row>}
+      {selectedView != 'none' && isDesktop && <Row id="top-content">
         {selectedView == 'career' && <Career/>}
         {selectedView == 'education' && <Education/>}
         {selectedView == 'contact' && <Career/>}
