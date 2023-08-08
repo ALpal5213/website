@@ -1,12 +1,15 @@
 import { BiSolidBriefcase, BiSolidGraduation, BiSolidEnvelope} from 'react-icons/bi'
 import { IconContext } from 'react-icons'
-
+import { AppContext } from '../App.js'
+import { useContext, useState }  from 'react'
 
 /*********************ICONS*********************/
 export const BriefcaseIconSmall = () => {
+  const {selectedView} = useContext(AppContext);
+
   return (
     <IconContext.Provider value={{ 
-      color: "white",
+      color: selectedView === 'career' ? '#800000' : '#ffffff',
       size: '30px',
     }}>
       <div style={{
@@ -20,9 +23,11 @@ export const BriefcaseIconSmall = () => {
 }
 
 export const BriefcaseIconLarge = () => {
+  const {selectedView} = useContext(AppContext);
+
   return (
     <IconContext.Provider value={{ 
-      color: "white",
+      color: selectedView === 'career' ? '#800000' : '#ffffff',
       size: '60px',
     }}>
       <div style={{
@@ -36,9 +41,11 @@ export const BriefcaseIconLarge = () => {
 }
 
 export const EducationIconSmall = () => {
+  const {selectedView} = useContext(AppContext);
+
   return (
     <IconContext.Provider value={{ 
-      color: "white",
+      color: selectedView === 'education' ? '#800000' : '#ffffff',
       size: '30px',
     }}>
       <div style={{
@@ -52,9 +59,11 @@ export const EducationIconSmall = () => {
 }
 
 export const EducationIconLarge = () => {
+  const {selectedView} = useContext(AppContext);
+
   return (
     <IconContext.Provider value={{ 
-      color: "white",
+      color: selectedView === 'education' ? '#800000' : '#ffffff',
       size: '65px',
     }}>
       <div style={{
@@ -68,9 +77,11 @@ export const EducationIconLarge = () => {
 }
 
 export const ContactIconSmall = () => {
+  const {selectedView} = useContext(AppContext); 
+
   return (
     <IconContext.Provider value={{ 
-      color: "white",
+      color: selectedView === 'contact' ? '#800000' : '#ffffff',
       size: '30px',
     }}>
       <div style={{
@@ -84,9 +95,11 @@ export const ContactIconSmall = () => {
 }
 
 export const ContactIconLarge = () => {
+  const {selectedView} = useContext(AppContext);
+
   return (
     <IconContext.Provider value={{ 
-      color: "white",
+      color: selectedView === 'contact' ? '#800000' : '#ffffff',
       size: '60px',
     }}>
       <div style={{

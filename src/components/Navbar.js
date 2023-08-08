@@ -26,7 +26,7 @@ export const NavbarSmallScreen = () => {
 
   return (
     <Container fluid style={{
-      color: 'white',
+      color: '#ffffff',
       textAlign: 'center',
       position: 'absolute',
       bottom: '10px'
@@ -39,7 +39,11 @@ export const NavbarSmallScreen = () => {
           selectedView === 'career' ? setSelectedView('none') : setSelectedView('career');
           handleClickScroll();
         }}>{
-          <div className='menu-icon-mobile'>
+          <div className='menu-icon-mobile' style={{
+            color: selectedView === 'career' ? '#800000' : '#ffffff',
+            backgroundColor: selectedView === 'career' ? 'rgba(255, 255, 255, .33)' : 'rgba(0, 0, 0, 0)' ,
+            borderRadius: '5px'
+          }}>
             <BriefcaseIconSmall />
             <div>Career</div>
           </div>
@@ -48,7 +52,11 @@ export const NavbarSmallScreen = () => {
           selectedView === 'education' ? setSelectedView('none') : setSelectedView('education');
           handleClickScroll();
         }}>{
-          <div className='menu-icon-mobile'>
+          <div className='menu-icon-mobile' style={{
+            color: selectedView === 'education' ? '#800000' : '#ffffff',
+            backgroundColor: selectedView === 'education' ? 'rgba(255, 255, 255, .33)' : 'rgba(0, 0, 0, 0)' ,
+            borderRadius: '5px'
+          }}>
             <EducationIconSmall />
             <div>Education</div>
           </div>
@@ -57,7 +65,11 @@ export const NavbarSmallScreen = () => {
           selectedView === 'contact' ? setSelectedView('none') : setSelectedView('contact');
           handleClickScroll();
         }}>{
-          <div className='menu-icon-mobile'>
+          <div className='menu-icon-mobile' style={{
+            color: selectedView === 'contact' ? '#800000' : '#ffffff',
+            backgroundColor: selectedView === 'contact' ? 'rgba(255, 255, 255, .33)' : 'rgba(0, 0, 0, 0)' ,
+            borderRadius: '5px'
+          }}>
             <ContactIconSmall />
             <div>Contact Me</div>
           </div>
@@ -99,27 +111,48 @@ export const NavbarLargeScreen = () => {
         padding: '40px 0 40px 0'
       }}>
         <Col xs={12}>{
-          <div className='menu-icon-desktop' onClick={() => {
-            selectedView === 'career' ? setSelectedView('none') : setSelectedView('career');
-            handleClickScroll();
-          }}>
+          <div 
+            className='menu-icon-desktop' 
+            onClick={() => {
+              selectedView === 'career' ? setSelectedView('none') : setSelectedView('career');
+              handleClickScroll();
+            }}
+            style={{
+              color: selectedView === 'career' ? '#800000' : '#ffffff',
+              backgroundColor: selectedView === 'career' ? 'rgba(255, 255, 255, .33)' : 'rgba(0, 0, 0, 0)' ,
+              borderRadius: '5px'
+            }}>
             <BriefcaseIconLarge />
             <div>Career</div>
           </div>
         }</Col>
         <Col xs={12}>{
-          <div className='menu-icon-desktop' onClick={() => {
+          <div 
+          className='menu-icon-desktop' 
+          onClick={() => {
             selectedView === 'education' ? setSelectedView('none') : setSelectedView('education');
             handleClickScroll();
+          }}
+          style={{
+            color: selectedView === 'education' ? '#800000' : '#ffffff',
+            backgroundColor: selectedView === 'education' ? 'rgba(255, 255, 255, .33)' : 'rgba(0, 0, 0, 0)' ,
+            borderRadius: '5px'
           }}>
             <EducationIconLarge />
             <div>Education</div>
           </div>
         }</Col>
         <Col xs={12}>{
-          <div className='menu-icon-desktop' onClick={() => {
+          <div 
+          className='menu-icon-desktop' 
+          onClick={() => {
             selectedView === 'contact' ? setSelectedView('none') : setSelectedView('contact');
             handleClickScroll();
+          }}
+          style={{
+            color: selectedView === 'contact' ? '#800000' : '#ffffff',
+            backgroundColor: selectedView === 'contact' ? 'rgba(255, 255, 255, .33)' : 'rgba(0, 0, 0, 0)' ,
+            borderRadius: '5px'
           }}>
             <ContactIconLarge />
             <div>Contact Me</div>

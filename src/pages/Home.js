@@ -9,8 +9,8 @@ import {
 import { NavbarSmallScreen, NavbarLargeScreen } from '../components/Navbar.js';
 import { DesktopWelcome, MobileWelcome } from '../components/WelcomeText.js';
 import { MainCarouselMobile, MainCarouselDesktop } from '../components/Carousels.js';
-import { Career } from '../components/Career.js';
-import { Education } from '../components/Education.js';
+import { CareerMobile } from '../components/Career.js';
+import { EducationMobile } from '../components/Education.js';
 
 const Home = () => {
   const {selectedView, setSelectedView} = useContext(AppContext);
@@ -44,14 +44,14 @@ const Home = () => {
       </Row>   
       {!isDesktop &&<Row><NavbarSmallScreen/></Row>}
       {selectedView != 'none' && !isDesktop && <Row>
-        {selectedView == 'career' && <Career/>}
-        {selectedView == 'education' && <Education/>}
-        {selectedView == 'contact' && <Career/>}
+        {selectedView == 'career' && <CareerMobile/>}
+        {selectedView == 'education' && <EducationMobile/>}
+        {selectedView == 'contact' && <CareerMobile/>}
       </Row>}
       {selectedView != 'none' && isDesktop && <Row id="top-content">
-        {selectedView == 'career' && <Career/>}
-        {selectedView == 'education' && <Education/>}
-        {selectedView == 'contact' && <Career/>}
+        {selectedView == 'career' && <CareerMobile/>}
+        {selectedView == 'education' && <EducationMobile/>}
+        {selectedView == 'contact' && <CareerMobile/>}
       </Row>}
     </Container>
   );

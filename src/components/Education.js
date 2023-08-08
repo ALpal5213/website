@@ -1,13 +1,37 @@
 import { Container, Col, Row } from 'react-bootstrap'
+import { UWCarousel } from '../components/Carousels.js';
 
-export const Education = () => {
+
+export const EducationMobile = () => {
   return (
     <Container fluid style={{
-      position: 'absolute',
-      top: 700
+      marginTop: '80vh'
     }}>
-      <Row>UNM</Row>
-      <Row style={{marginBottom: '900px'}}>UW</Row>
+      <Row style={{marginBottom: '10%'}}>
+        <Col style={{
+          display: 'flex',
+          justifyContent: 'center',
+        }}>
+          <UWCarousel/>
+        </Col>
+      </Row>
+      <Row style={{marginBottom: '10%'}}>
+        <Col style={{
+          display: 'flex',
+          justifyContent: 'center',
+        }}>
+          <UWCarousel/>
+        </Col>
+      </Row>
+      <Row style={{marginBottom: '10%'}}>
+        <Col style={{
+          display: 'flex',
+          justifyContent: 'center',
+        }}>
+          <UWCarousel/>
+        </Col>
+      </Row>
+      {/* <Row style={{marginBottom: '900px'}}>UNM</Row> */}
     </Container>
   );
 };

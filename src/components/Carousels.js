@@ -1,7 +1,6 @@
 import { Container, Col, Row, Carousel } from 'react-bootstrap';
 
 export const MainCarouselMobile = () => {
-
   return (
     <Carousel fade controls={false} variant={'dark'} style={{
       overflow: 'hidden',
@@ -15,17 +14,14 @@ export const MainCarouselMobile = () => {
     }}>
       <Carousel.Item style={{
         position: 'relative',
-        left: '-25px',
-        position: 'relative'
+        left: '-25px'
       }}>
         <div>
           <img 
-            // src="website/AdrianSpeechMobile.jpg"
-            src="AdrianSpeechMobile.jpg" 
+            src="website/AdrianSpeechMobile.jpg"
+            // src="AdrianSpeechMobile.jpg" 
             alt="Adrian Giving a Speech" 
             width={'120%'}
-            // height={'1000px'}
-            // paddingTop={'-50px'}
           />
         </div> 
       </Carousel.Item>
@@ -34,8 +30,8 @@ export const MainCarouselMobile = () => {
         left: '-25px'
       }}>
         <img 
-          // src="website/AdrianWithWifeMobile.jpg" 
-          src="AdrianWithWifeMobile.jpg" 
+          src="website/AdrianWithWifeMobile.jpg" 
+          // src="AdrianWithWifeMobile.jpg" 
           alt="Adrian With his Wife" 
           width={'120%'}
         />
@@ -56,19 +52,51 @@ export const MainCarouselDesktop = () => {
     }}>
       <Carousel.Item >
         <img 
-          // src="website/AdrianSpeechDesktop.jpg"
-          src="AdrianSpeechDesktop.jpg" 
+          src="website/AdrianSpeechDesktop.jpg"
+          // src="AdrianSpeechDesktop.jpg" 
           alt="Adrian Giving a Speech" 
           width={'100%'}
         />
       </Carousel.Item>
       <Carousel.Item >
         <img 
-          // src="website/AdrianWithWifeDesktop.jpg" 
-          src="AdrianWithWifeDesktop.jpg"
+          src="website/AdrianWithWifeDesktop.jpg" 
+          // src="AdrianWithWifeDesktop.jpg"
           alt="Adrian With his Wife" 
           width={'100%'}
         />
+      </Carousel.Item>
+    </Carousel>
+  );
+}
+
+export const UWCarousel = () => {
+  return (
+    <Carousel controls={false} indicators={false} variant={'dark'} style={{
+      overflow: 'hidden',
+      width: '85%',
+      boxShadow: '10px 8px 10px #000000',
+      borderRadius: '10px',
+    }}>
+      <Carousel.Item style={{}}>
+        <div>
+          <img 
+            src="website/SuzzalloInTheDark.jpg"
+            // src="AdrianSpeechMobile.jpg" 
+            alt="Suzzallo Library" 
+            width={'100%'}
+          />
+        </div> 
+      </Carousel.Item>
+      <Carousel.Item style={{}}>
+        <div>
+          <img 
+            src="website/UWCherryBlossoms.jpg"
+            // src="AdrianSpeechMobile.jpg" 
+            alt="Suzzallo Library" 
+            width={'100%'}
+          />
+        </div> 
       </Carousel.Item>
     </Carousel>
   );

@@ -1,10 +1,10 @@
 import { Container, Col, Row } from 'react-bootstrap'
 
-export const Career = () => {
+
+export const CareerMobile = () => {
   return (
     <Container fluid style={{
-      position: 'absolute',
-      top: 700
+      marginTop: '80vh'
     }}>
       <Row>Starfire Optical Range</Row>
       <Row>Space CAMP</Row>
