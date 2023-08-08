@@ -20,8 +20,8 @@ export const MainCarouselMobile = () => {
       }}>
         <div>
           <img 
-            src="website/AdrianSpeechMobile.jpg"
-            // src="AdrianSpeechMobile.jpg" 
+            // src="website/AdrianSpeechMobile.jpg"
+            src="AdrianSpeechMobile.jpg" 
             alt="Adrian Giving a Speech" 
             width={'120%'}
             // height={'1000px'}
@@ -34,8 +34,8 @@ export const MainCarouselMobile = () => {
         left: '-25px'
       }}>
         <img 
-          src="website/AdrianWithWifeMobile.jpg" 
-          // src="AdrianWithWifeMobile.jpg" 
+          // src="website/AdrianWithWifeMobile.jpg" 
+          src="AdrianWithWifeMobile.jpg" 
           alt="Adrian With his Wife" 
           width={'120%'}
         />
@@ -56,16 +56,16 @@ export const MainCarouselDesktop = () => {
     }}>
       <Carousel.Item >
         <img 
-          src="website/AdrianSpeechDesktop.jpg"
-          // src="AdrianSpeechDesktop.jpg" 
+          // src="website/AdrianSpeechDesktop.jpg"
+          src="AdrianSpeechDesktop.jpg" 
           alt="Adrian Giving a Speech" 
           width={'100%'}
         />
       </Carousel.Item>
       <Carousel.Item >
         <img 
-          src="website/AdrianWithWifeDesktop.jpg" 
-          // src="AdrianWithWifeDesktop.jpg"
+          // src="website/AdrianWithWifeDesktop.jpg" 
+          src="AdrianWithWifeDesktop.jpg"
           alt="Adrian With his Wife" 
           width={'100%'}
         />
