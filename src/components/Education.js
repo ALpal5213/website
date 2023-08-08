@@ -1,5 +1,5 @@
 import { Container, Col, Row } from 'react-bootstrap'
-import { UWCarousel } from '../components/Carousels.js';
+import { UWCarousel, UNMCarousel } from '../components/Carousels.js';
 
 
 export const EducationMobile = () => {
@@ -12,7 +12,7 @@ export const EducationMobile = () => {
           display: 'flex',
           justifyContent: 'center',
         }}>
-          <UWCarousel/>
+          <UNMCarousel/>
         </Col>
       </Row>
       <Row style={{marginBottom: '10%'}}>
@@ -23,14 +23,14 @@ export const EducationMobile = () => {
           <UWCarousel/>
         </Col>
       </Row>
-      <Row style={{marginBottom: '10%'}}>
+      {/* <Row style={{marginBottom: '10%'}}>
         <Col style={{
           display: 'flex',
           justifyContent: 'center',
         }}>
           <UWCarousel/>
         </Col>
-      </Row>
+      </Row> */}
       {/* <Row style={{marginBottom: '900px'}}>UNM</Row> */}
     </Container>
   );

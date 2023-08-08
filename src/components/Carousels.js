@@ -81,6 +81,58 @@ export const UWCarousel = () => {
       <Carousel.Item style={{}}>
         <div>
           <img 
+            // src="website/BachelorsCover.png"
+            src="BachelorsCover.jpg" 
+            alt="Bachelors Degree" 
+            width={'100%'}
+          />
+        </div> 
+      </Carousel.Item>
+      <Carousel.Item style={{}}>
+        <div>
+          <img 
+            // src="website/SuzzalloInTheDark.jpg"
+            src="SuzzalloInTheDark.jpg" 
+            alt="Suzzallo Library" 
+            width={'100%'}
+          />
+        </div> 
+      </Carousel.Item>
+      <Carousel.Item style={{}}>
+        <div>
+          <img 
+            // src="website/UWCherryBlossoms.jpg"
+            src="UWCherryBlossoms.jpg" 
+            alt="Suzzallo Library" 
+            width={'100%'}
+          />
+        </div> 
+      </Carousel.Item>
+    </Carousel>
+  );
+}
+
+export const UNMCarousel = () => {
+  return (
+    <Carousel controls={false} indicators={false} variant={'dark'} style={{
+      overflow: 'hidden',
+      width: '85%',
+      boxShadow: '10px 8px 10px #000000',
+      borderRadius: '10px',
+    }}>
+      <Carousel.Item style={{}}>
+        <div>
+          <img 
+            // src="website/MastersCover.png"
+            src="MastersCover.jpg" 
+            alt="Suzzallo Library" 
+            width={'100%'}
+          />
+        </div> 
+      </Carousel.Item>
+      <Carousel.Item style={{}}>
+        <div>
+          <img 
             // src="website/SuzzalloInTheDark.jpg"
             src="SuzzalloInTheDark.jpg" 
             alt="Suzzallo Library" 
