@@ -24,6 +24,16 @@ export const NavbarSmallScreen = () => {
     }, 500);
   };
 
+  const handleCloseScroll = () => {
+    const element = document.getElementById('top-page');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setTimeout(() => {
+      setSelectedView('none');
+    }, 500);
+  };
+
   return (
     <Container fluid style={{
       color: '#ffffff',
@@ -36,7 +46,7 @@ export const NavbarSmallScreen = () => {
       </Row>
       <Row>
         <Col xs={4} onClick={() => {
-          selectedView === 'career' ? setSelectedView('none') : setSelectedView('career');
+          selectedView === 'career' ? handleCloseScroll() : setSelectedView('career');
           handleClickScroll();
         }}>{
           <div className='menu-icon-mobile' style={{
@@ -49,7 +59,7 @@ export const NavbarSmallScreen = () => {
           </div>
         }</Col>
         <Col xs={4} onClick={() => {
-          selectedView === 'education' ? setSelectedView('none') : setSelectedView('education');
+          selectedView === 'education' ? handleCloseScroll() : setSelectedView('education');
           handleClickScroll();
         }}>{
           <div className='menu-icon-mobile' style={{
@@ -62,7 +72,7 @@ export const NavbarSmallScreen = () => {
           </div>
         }</Col>
         <Col xs={4} onClick={() => {
-          selectedView === 'contact' ? setSelectedView('none') : setSelectedView('contact');
+          selectedView === 'contact' ? handleCloseScroll() : setSelectedView('contact');
           handleClickScroll();
         }}>{
           <div className='menu-icon-mobile' style={{
@@ -91,6 +101,16 @@ export const NavbarLargeScreen = () => {
     }, 500);
   };
 
+  const handleCloseScroll = () => {
+    const element = document.getElementById('top-page');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setTimeout(() => {
+      setSelectedView('none');
+    }, 500);
+  };
+
   return (
     <Container fluid style={{
       color: 'white',
@@ -114,7 +134,7 @@ export const NavbarLargeScreen = () => {
           <div 
             className='menu-icon-desktop' 
             onClick={() => {
-              selectedView === 'career' ? setSelectedView('none') : setSelectedView('career');
+              selectedView === 'career' ? handleCloseScroll() : setSelectedView('career');
               handleClickScroll();
             }}
             style={{
@@ -130,7 +150,7 @@ export const NavbarLargeScreen = () => {
           <div 
           className='menu-icon-desktop' 
           onClick={() => {
-            selectedView === 'education' ? setSelectedView('none') : setSelectedView('education');
+            selectedView === 'education' ? handleCloseScroll() : setSelectedView('education');
             handleClickScroll();
           }}
           style={{
@@ -146,7 +166,7 @@ export const NavbarLargeScreen = () => {
           <div 
           className='menu-icon-desktop' 
           onClick={() => {
-            selectedView === 'contact' ? setSelectedView('none') : setSelectedView('contact');
+            selectedView === 'contact' ? handleCloseScroll() : setSelectedView('contact');
             handleClickScroll();
           }}
           style={{

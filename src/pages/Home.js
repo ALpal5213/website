@@ -27,7 +27,7 @@ const Home = () => {
     <Container fluid style={{ 
       color: 'white',
       // position: 'relative'
-      }}>
+      }} id="top-page">
       <Row>
         {isDesktop && <Col md={1}><NavbarLargeScreen/></Col>}
         <Col xs={12} lg={3}>

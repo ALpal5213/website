@@ -6,10 +6,12 @@ export const AppContext = createContext();
 
 function App() {
   const [selectedView, setSelectedView] = useState('none');
+  const [selectedItem, setSelectedItem] = useState('none');
 
   return (
     <AppContext.Provider value={{
-      selectedView, setSelectedView
+      selectedView, setSelectedView,
+      selectedItem, setSelectedItem
     }}>
       <Router basename={process.env.PUBLIC_URL}>
         <Routes>

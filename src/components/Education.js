@@ -1,18 +1,23 @@
 import { Container, Col, Row } from 'react-bootstrap'
 import { UWCarousel, UNMCarousel } from '../components/Carousels.js';
-
+import { AppContext } from '../App.js'
+import { useContext }  from 'react'
 
 export const EducationMobile = () => {
+  const {selectedItem} = useContext(AppContext);
+
   return (
     <Container fluid style={{
       marginTop: '80vh'
     }}>
-      <Row style={{marginBottom: '10%'}}>
-        <Col style={{
-          display: 'flex',
-          justifyContent: 'center',
-        }}>
-          <UNMCarousel/>
+      <Row style={{textAlign: 'center'}}>
+        <Col>
+          <h3>Education</h3>
+        </Col>
+      </Row>
+      <Row style={{textAlign: 'center', marginBottom: '10%'}}>
+        <Col>
+          My education has played a huge role in making me who I am today as well as developing the skills I now possess. Select a card below to learn more about my educational background.
         </Col>
       </Row>
       <Row style={{marginBottom: '10%'}}>
@@ -20,18 +25,39 @@ export const EducationMobile = () => {
           display: 'flex',
           justifyContent: 'center',
         }}>
-          <UWCarousel/>
+          {selectedItem === 'unm' && <input id="unm-card" type="checkbox" class="radio"/>}
+          <label className="flip-card" for="unm-card">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <UNMCarousel/>
+              </div>
+              <div className="flip-card-back">
+                <h4>hellooooo</h4>
+                <div>hi</div>
+              </div>
+            </div>
+          </label>
         </Col>
       </Row>
-      {/* <Row style={{marginBottom: '10%'}}>
+      <Row style={{marginBottom: '10%'}}>
         <Col style={{
           display: 'flex',
           justifyContent: 'center',
         }}>
-          <UWCarousel/>
+          {selectedItem === 'uw' && <input id="uw-card" type="checkbox" class="radio"/>}
+          <label className="flip-card" for="uw-card">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <UWCarousel/>
+              </div>
+              <div className="flip-card-back">
+                <h4>hellooooo</h4>
+                <div>hi</div>
+              </div>
+            </div>
+          </label>
         </Col>
-      </Row> */}
-      {/* <Row style={{marginBottom: '900px'}}>UNM</Row> */}
+      </Row>
     </Container>
   );
 };

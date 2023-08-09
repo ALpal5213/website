@@ -1,4 +1,8 @@
 import { Container, Col, Row, Carousel } from 'react-bootstrap';
+import { AppContext } from '../App.js'
+import { useContext }  from 'react'
+
+const dev = "website/";
 
 export const MainCarouselMobile = () => {
   return (
@@ -71,18 +75,22 @@ export const MainCarouselDesktop = () => {
 }
 
 export const UWCarousel = () => {
+  const {selectedItem, setSelectedItem} = useContext(AppContext);
+
   return (
     <Carousel controls={false} indicators={false} variant={'dark'} style={{
       overflow: 'hidden',
-      width: '85%',
+      width: '100%',
       boxShadow: '10px 8px 10px #000000',
       borderRadius: '10px',
+    }} onClick={() => {
+      selectedItem === 'uw' ? setSelectedItem('none') : setSelectedItem('uw');
     }}>
       <Carousel.Item style={{}}>
         <div>
           <img 
             // src="website/BachelorsCover.png"
-            src="BachelorsCover.png" 
+            src="BachelorsCover.png"
             alt="Bachelors Degree" 
             width={'100%'}
           />
@@ -113,12 +121,16 @@ export const UWCarousel = () => {
 }
 
 export const UNMCarousel = () => {
+  const {selectedItem, setSelectedItem} = useContext(AppContext);
+
   return (
     <Carousel controls={false} indicators={false} variant={'dark'} style={{
       overflow: 'hidden',
-      width: '85%',
+      width: '100%',
       boxShadow: '10px 8px 10px #000000',
       borderRadius: '10px',
+    }} onClick={() => {
+      selectedItem === 'unm' ? setSelectedItem('none') : setSelectedItem('unm');
     }}>
       <Carousel.Item style={{}}>
         <div>

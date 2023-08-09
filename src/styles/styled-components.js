@@ -1,7 +1,7 @@
 import { BiSolidBriefcase, BiSolidGraduation, BiSolidEnvelope} from 'react-icons/bi'
 import { IconContext } from 'react-icons'
 import { AppContext } from '../App.js'
-import { useContext, useState }  from 'react'
+import { useContext }  from 'react'
 
 /*********************ICONS*********************/
 export const BriefcaseIconSmall = () => {
