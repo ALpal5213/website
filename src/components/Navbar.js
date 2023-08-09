@@ -31,7 +31,7 @@ export const NavbarSmallScreen = () => {
     }
     setTimeout(() => {
       setSelectedView('none');
-    }, 500);
+    }, 1000);
   };
 
   return (
@@ -108,7 +108,7 @@ export const NavbarLargeScreen = () => {
     }
     setTimeout(() => {
       setSelectedView('none');
-    }, 500);
+    }, 1000);
   };
 
   return (
