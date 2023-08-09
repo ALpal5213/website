@@ -21,7 +21,7 @@ export const NavbarSmallScreen = () => {
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
-    }, 500);
+    }, 700);
   };
 
   const handleCloseScroll = () => {
@@ -31,7 +31,7 @@ export const NavbarSmallScreen = () => {
     }
     setTimeout(() => {
       setSelectedView('none');
-    }, 1000);
+    }, 700);
   };
 
   return (
