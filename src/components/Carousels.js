@@ -214,6 +214,16 @@ export const USSFCarousel = () => {
           />
         </div> 
       </Carousel.Item>
+      <Carousel.Item style={{}}>
+        <div>
+          <img 
+            // src="website/SOR.jpg"
+            src="SOR.jpg" 
+            alt="Space Force Cover" 
+            width={'100%'}
+          />
+        </div> 
+      </Carousel.Item>
     </Carousel>
   );
 }
