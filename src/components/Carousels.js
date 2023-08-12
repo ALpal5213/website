@@ -78,7 +78,7 @@ export const UWCarousel = () => {
   const {selectedItem, setSelectedItem} = useContext(AppContext);
 
   return (
-    <Carousel controls={false} touch={false} indicators={false} variant={'dark'} style={{
+    <Carousel controls={false} indicators={false} variant={'dark'} style={{
       overflow: 'hidden',
       width: '100%',
       boxShadow: '10px 8px 10px #000000',
@@ -124,7 +124,7 @@ export const UNMCarousel = () => {
   const {selectedItem, setSelectedItem} = useContext(AppContext);
 
   return (
-    <Carousel controls={false} touch={false} indicators={false} variant={'dark'} style={{
+    <Carousel controls={false} indicators={false} variant={'dark'} style={{
       overflow: 'hidden',
       width: '100%',
       boxShadow: '10px 8px 10px #000000',
