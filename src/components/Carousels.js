@@ -219,7 +219,7 @@ export const USSFCarousel = () => {
           <img 
             // src="website/SOR.jpg"
             src="SOR.jpg" 
-            alt="Space Force Cover" 
+            alt="Starfire Optical Range" 
             width={'100%'}
           />
         </div> 
