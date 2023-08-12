@@ -20,6 +20,17 @@ export const MainCarouselMobile = () => {
         position: 'relative',
         left: '-25px'
       }}>
+        <img 
+          // src="website/AdrianWithWifeMobile.jpg" 
+          src="AdrianWithWifeMobile.jpg" 
+          alt="Adrian With his Wife" 
+          width={'120%'}
+        />
+      </Carousel.Item>
+      <Carousel.Item style={{
+        position: 'relative',
+        left: '-25px'
+      }}>
         <div>
           <img 
             // src="website/AdrianSpeechMobile.jpg"
@@ -28,17 +39,6 @@ export const MainCarouselMobile = () => {
             width={'120%'}
           />
         </div> 
-      </Carousel.Item>
-      <Carousel.Item style={{
-        position: 'relative',
-        left: '-25px'
-      }}>
-        <img 
-          // src="website/AdrianWithWifeMobile.jpg" 
-          src="AdrianWithWifeMobile.jpg" 
-          alt="Adrian With his Wife" 
-          width={'120%'}
-        />
       </Carousel.Item>
     </Carousel>
   );
@@ -56,17 +56,17 @@ export const MainCarouselDesktop = () => {
     }}>
       <Carousel.Item >
         <img 
-          // src="website/AdrianSpeechDesktop.jpg"
-          src="AdrianSpeechDesktop.jpg" 
-          alt="Adrian Giving a Speech" 
+          // src="website/AdrianWithWifeDesktop.jpg" 
+          src="AdrianWithWifeDesktop.jpg"
+          alt="Adrian With his Wife" 
           width={'100%'}
         />
       </Carousel.Item>
       <Carousel.Item >
         <img 
-          // src="website/AdrianWithWifeDesktop.jpg" 
-          src="AdrianWithWifeDesktop.jpg"
-          alt="Adrian With his Wife" 
+          // src="website/AdrianSpeechDesktop.jpg"
+          src="AdrianSpeechDesktop.jpg" 
+          alt="Adrian Giving a Speech" 
           width={'100%'}
         />
       </Carousel.Item>
@@ -78,7 +78,7 @@ export const UWCarousel = () => {
   const {selectedItem, setSelectedItem} = useContext(AppContext);
 
   return (
-    <Carousel controls={false} indicators={false} variant={'dark'} style={{
+    <Carousel controls={false} touch={false} indicators={false} variant={'dark'} style={{
       overflow: 'hidden',
       width: '100%',
       boxShadow: '10px 8px 10px #000000',
@@ -111,7 +111,7 @@ export const UWCarousel = () => {
           <img 
             // src="website/UWCherryBlossoms.jpg"
             src="UWCherryBlossoms.jpg" 
-            alt="Suzzallo Library" 
+            alt="UW Cherry Blossoms" 
             width={'100%'}
           />
         </div> 
@@ -124,7 +124,7 @@ export const UNMCarousel = () => {
   const {selectedItem, setSelectedItem} = useContext(AppContext);
 
   return (
-    <Carousel controls={false} indicators={false} variant={'dark'} style={{
+    <Carousel controls={false} touch={false} indicators={false} variant={'dark'} style={{
       overflow: 'hidden',
       width: '100%',
       boxShadow: '10px 8px 10px #000000',
@@ -145,9 +145,9 @@ export const UNMCarousel = () => {
       <Carousel.Item style={{}}>
         <div>
           <img 
-            // src="website/SuzzalloInTheDark.jpg"
-            src="SuzzalloInTheDark.jpg" 
-            alt="Suzzallo Library" 
+            // src="website/abq-dark.jpg"
+            src="abq-dark.jpg" 
+            alt="Albququerque at night" 
             width={'100%'}
           />
         </div> 
@@ -155,9 +155,9 @@ export const UNMCarousel = () => {
       <Carousel.Item style={{}}>
         <div>
           <img 
-            // src="website/UWCherryBlossoms.jpg"
-            src="UWCherryBlossoms.jpg" 
-            alt="Suzzallo Library" 
+            // src="website/lobo-mascot.jpg"
+            src="lobo-mascot.jpg" 
+            alt="Adrian with the Lobos" 
             width={'100%'}
           />
         </div> 
