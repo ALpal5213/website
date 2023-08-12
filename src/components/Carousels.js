@@ -89,8 +89,8 @@ export const UWCarousel = () => {
       <Carousel.Item style={{}}>
         <div>
           <img 
-            // src="website/BachelorsCover.png"
-            src="BachelorsCover.png"
+            // src="website/BachelorsCover.jpg"
+            src="BachelorsCover.jpg"
             alt="Bachelors Degree" 
             width={'100%'}
           />
@@ -135,8 +135,8 @@ export const UNMCarousel = () => {
       <Carousel.Item style={{}}>
         <div>
           <img 
-            // src="website/MastersCover.png"
-            src="MastersCover.png" 
+            // src="website/MastersCover.jpg"
+            src="MastersCover.jpg" 
             alt="Masters Cover" 
             width={'100%'}
           />

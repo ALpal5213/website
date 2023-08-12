@@ -32,8 +32,12 @@ export const EducationMobile = () => {
                 <UNMCarousel/>
               </div>
               <div className="flip-card-back">
-                <h4>hellooooo</h4>
-                <div>hi</div>
+                <h6>Computer Engineering</h6>
+                <div className="card-contents">
+                  <p>Focus: Internet of Things</p>
+                  <p>GPA: 4.0</p>
+                  <p>Thesis: Coming Soon</p>
+                </div>
               </div>
             </div>
           </label>
@@ -51,8 +55,18 @@ export const EducationMobile = () => {
                 <UWCarousel/>
               </div>
               <div className="flip-card-back">
-                <h4>hellooooo</h4>
-                <div>hi</div>
+                <h6>Physics <br/>& <br/>Electrical Engineering</h6>
+                <div className="card-contents">
+                  <p>Focus:</p>
+                  <p style={{marginTop: '5px'}}>Physics: Comprehensive</p>
+                  <p style={{marginTop: '5px'}}>EE: Embedded Computing Systems</p>
+                  <p>GPA: 3.39</p>
+                  <p>Extras:</p>
+                  <ul>
+                    <li>Air Force ROTC</li>
+                    <li>UW Research <a href="https://arthurbarnard.com/">site</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </label>

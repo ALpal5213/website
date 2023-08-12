@@ -14,8 +14,12 @@ body {
   cursor: pointer;
 }
 
-#uw-card, #unm-card {
+input[type="checkbox"] {
   display: none;
+}
+
+input[type="checkbox"]:checked + .flip-card {
+    z-index: 1;
 }
 
 #uw-card:checked + .flip-card .flip-card-inner, #unm-card:checked + .flip-card .flip-card-inner {
@@ -42,12 +46,6 @@ body {
   margin-bottom: 10px;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-/* .flip-card:hover .flip-card-inner {
-  transform: rotateZ(90deg) rotateX(180deg) scale(1.5);
-  
-} */
-
 /* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
@@ -57,18 +55,35 @@ body {
   backface-visibility: hidden;
 }
 
-/* Style the front side */
-.flip-card-front {
-  
-}
-
 /* Style the back side */
 .flip-card-back {
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  background-color: rgb(128, 128, 128);
+  background-color: rgb(33, 33, 33);
+  background: radial-gradient(circle at 100%, #222222 0%, #222222 85%, #800000 100%);
+  box-shadow: -10px 8px 10px #000000;
   transform: rotateY(180deg);
   border-radius: 10px;
   position: relative;
   right: 10vw;
+  text-align: center;
+  padding: 5px;
+}
+
+.card-contents { 
+  text-align: left;
+  margin: 5px 20px 0 0;
+  font-size: 3.2vw;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+}
+
+h6 {
+  margin: 0;
 }
