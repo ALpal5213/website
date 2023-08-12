@@ -2,6 +2,7 @@ import { Container, Col, Row } from 'react-bootstrap'
 import { UWCarousel, UNMCarousel } from '../components/Carousels.js';
 import { AppContext } from '../App.js'
 import { useContext }  from 'react'
+import { RedDividerVertical} from '../styles/styled-components.js'
 
 export const EducationMobile = () => {
   const {selectedItem} = useContext(AppContext);
@@ -25,14 +26,16 @@ export const EducationMobile = () => {
           display: 'flex',
           justifyContent: 'center',
         }}>
-          {selectedItem === 'unm' && <input id="unm-card" type="checkbox" class="radio"/>}
-          <label className="flip-card" for="unm-card">
+          {selectedItem === 'unm' && <input id="unm-card" type="checkbox" className="radio"/>}
+          <label className="flip-card" htmlFor="unm-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
                 <UNMCarousel/>
               </div>
               <div className="flip-card-back">
                 <h6>Computer Engineering</h6>
+                <RedDividerVertical/>
+                
                 <div className="card-contents">
                   <p>Focus: Internet of Things</p>
                   <p>GPA: 4.0</p>
@@ -48,14 +51,16 @@ export const EducationMobile = () => {
           display: 'flex',
           justifyContent: 'center',
         }}>
-          {selectedItem === 'uw' && <input id="uw-card" type="checkbox" class="radio"/>}
-          <label className="flip-card" for="uw-card">
+          {selectedItem === 'uw' && <input id="uw-card" type="checkbox" className="radio"/>}
+          <label className="flip-card" htmlFor="uw-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
                 <UWCarousel/>
               </div>
               <div className="flip-card-back">
                 <h6>Physics <br/>& <br/>Electrical Engineering</h6>
+                <RedDividerVertical/>
+
                 <div className="card-contents">
                   <p>Focus:</p>
                   <p style={{marginTop: '5px'}}>Physics: Comprehensive</p>

@@ -165,3 +165,55 @@ export const UNMCarousel = () => {
     </Carousel>
   );
 }
+
+export const HomeDepotCarousel = () => {
+  const {selectedItem, setSelectedItem} = useContext(AppContext);
+
+  return (
+    <Carousel controls={false} indicators={false} variant={'dark'} style={{
+      overflow: 'hidden',
+      width: '100%',
+      boxShadow: '10px 8px 10px #000000',
+      borderRadius: '10px',
+    }} onClick={() => {
+      selectedItem === 'hd' ? setSelectedItem('none') : setSelectedItem('hd');
+    }}>
+      <Carousel.Item style={{}}>
+        <div>
+          <img 
+            // src="website/HomeDepotCover.jpg"
+            src="HomeDepotCover.jpg" 
+            alt="Home Depot Cover" 
+            width={'100%'}
+          />
+        </div> 
+      </Carousel.Item>
+    </Carousel>
+  );
+}
+
+export const USSFCarousel = () => {
+  const {selectedItem, setSelectedItem} = useContext(AppContext);
+
+  return (
+    <Carousel controls={false} indicators={false} variant={'dark'} style={{
+      overflow: 'hidden',
+      width: '100%',
+      boxShadow: '10px 8px 10px #000000',
+      borderRadius: '10px',
+    }} onClick={() => {
+      selectedItem === 'ussf' ? setSelectedItem('none') : setSelectedItem('ussf');
+    }}>
+      <Carousel.Item style={{}}>
+        <div>
+          <img 
+            // src="website/USSFCover.jpg"
+            src="USSFCover.jpg" 
+            alt="Space Force Cover" 
+            width={'100%'}
+          />
+        </div> 
+      </Carousel.Item>
+    </Carousel>
+  );
+}
