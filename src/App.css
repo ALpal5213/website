@@ -73,7 +73,7 @@ input[type="checkbox"]:checked + .flip-card {
 .card-contents { 
   text-align: left;
   margin: 5px 20px 0 0;
-  font-size: 3.2vw;
+  font-size: 3vw;
 }
 
 p {
