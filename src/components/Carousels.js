@@ -181,8 +181,8 @@ export const HomeDepotCarousel = () => {
       <Carousel.Item style={{}}>
         <div>
           <img 
-            src="website/HomeDepotCover.jpg"
-            // src="HomeDepotCover.jpg" 
+            // src="website/HomeDepotCover.jpg"
+            src="HomeDepotCover.jpg" 
             alt="Home Depot Cover" 
             width={'100%'}
           />
