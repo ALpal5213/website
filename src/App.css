@@ -15,7 +15,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked + .flip-card {
-    z-index: 1;
+  z-index: 1;
 }
 
 input[type="checkbox"]:checked + .flip-card .flip-card-inner {
@@ -49,6 +49,10 @@ input[type="checkbox"]:checked + .flip-card .flip-card-inner {
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+}
+
+.flip-card-front {
+  transform: rotateY(0deg);
 }
 
 /* Style the back side */
