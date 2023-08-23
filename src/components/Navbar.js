@@ -10,6 +10,8 @@ import {
   EducationIconLarge,
   ContactIconSmall,
   ContactIconLarge, 
+  SkillsIconSmall,
+  SkillsIconLarge,
 } from '../styles/styled-components.js'
 
 export const NavbarSmallScreen = () => {
@@ -72,16 +74,16 @@ export const NavbarSmallScreen = () => {
           </div>
         }</Col>
         <Col xs={4} onClick={() => {
-          selectedView === 'contact' ? handleCloseScroll() : setSelectedView('contact');
+          selectedView === 'skills' ? handleCloseScroll() : setSelectedView('skills');
           handleClickScroll();
         }}>{
           <div className='menu-icon-mobile' style={{
-            color: selectedView === 'contact' ? '#800000' : '#ffffff',
-            backgroundColor: selectedView === 'contact' ? 'rgba(255, 255, 255, .33)' : 'rgba(0, 0, 0, 0)' ,
+            color: selectedView === 'skills' ? '#800000' : '#ffffff',
+            backgroundColor: selectedView === 'skills' ? 'rgba(255, 255, 255, .33)' : 'rgba(0, 0, 0, 0)' ,
             borderRadius: '5px'
           }}>
-            <ContactIconSmall />
-            <div>Contact Me</div>
+            <SkillsIconSmall />
+            <div>Skills</div>
           </div>
         }</Col>
       </Row>
@@ -166,16 +168,16 @@ export const NavbarLargeScreen = () => {
           <div 
           className='menu-icon-desktop' 
           onClick={() => {
-            selectedView === 'contact' ? handleCloseScroll() : setSelectedView('contact');
+            selectedView === 'skills' ? handleCloseScroll() : setSelectedView('skills');
             handleClickScroll();
           }}
           style={{
-            color: selectedView === 'contact' ? '#800000' : '#ffffff',
-            backgroundColor: selectedView === 'contact' ? 'rgba(255, 255, 255, .33)' : 'rgba(0, 0, 0, 0)' ,
+            color: selectedView === 'skills' ? '#800000' : '#ffffff',
+            backgroundColor: selectedView === 'skills' ? 'rgba(255, 255, 255, .33)' : 'rgba(0, 0, 0, 0)' ,
             borderRadius: '5px'
           }}>
-            <ContactIconLarge />
-            <div>Contact Me</div>
+            <SkillsIconLarge />
+            <div>Skills</div>
           </div>
         }</Col>
       </Row>

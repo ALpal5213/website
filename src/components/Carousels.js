@@ -227,3 +227,81 @@ export const USSFCarousel = () => {
     </Carousel>
   );
 }
+
+export const DevCarousel = () => {
+  const {selectedItem, setSelectedItem} = useContext(AppContext);
+
+  return (
+    <Carousel controls={false} indicators={false} variant={'dark'} style={{
+      overflow: 'hidden',
+      width: '100%',
+      boxShadow: '10px 8px 10px #000000',
+      borderRadius: '10px',
+    }} onClick={() => {
+      selectedItem === 'dev' ? setSelectedItem('none') : setSelectedItem('dev');
+    }}>
+      <Carousel.Item style={{}}>
+        <div>
+          <img 
+            // src="website/USSFCover.jpg"
+            src="SoftDevCover.jpg" 
+            alt="Space Force Cover" 
+            width={'100%'}
+          />
+        </div> 
+      </Carousel.Item>
+    </Carousel>
+  );
+}
+
+export const LeadershipCarousel = () => {
+  const {selectedItem, setSelectedItem} = useContext(AppContext);
+
+  return (
+    <Carousel controls={false} indicators={false} variant={'dark'} style={{
+      overflow: 'hidden',
+      width: '100%',
+      boxShadow: '10px 8px 10px #000000',
+      borderRadius: '10px',
+    }} onClick={() => {
+      selectedItem === 'ldr' ? setSelectedItem('none') : setSelectedItem('ldr');
+    }}>
+      <Carousel.Item style={{}}>
+        <div>
+          <img 
+            // src="website/USSFCover.jpg"
+            src="USSFCover.jpg" 
+            alt="Space Force Cover" 
+            width={'100%'}
+          />
+        </div> 
+      </Carousel.Item>
+    </Carousel>
+  );
+}
+
+export const PMCarousel = () => {
+  const {selectedItem, setSelectedItem} = useContext(AppContext);
+
+  return (
+    <Carousel controls={false} indicators={false} variant={'dark'} style={{
+      overflow: 'hidden',
+      width: '100%',
+      boxShadow: '10px 8px 10px #000000',
+      borderRadius: '10px',
+    }} onClick={() => {
+      selectedItem === 'pm' ? setSelectedItem('none') : setSelectedItem('pm');
+    }}>
+      <Carousel.Item style={{}}>
+        <div>
+          <img 
+            // src="website/USSFCover.jpg"
+            src="USSFCover.jpg" 
+            alt="Space Force Cover" 
+            width={'100%'}
+          />
+        </div> 
+      </Carousel.Item>
+    </Carousel>
+  );
+}

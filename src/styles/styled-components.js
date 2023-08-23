@@ -1,4 +1,4 @@
-import { BiSolidBriefcase, BiSolidGraduation, BiSolidEnvelope} from 'react-icons/bi'
+import { BiSolidBriefcase, BiSolidGraduation, BiSolidEnvelope, BiSolidData} from 'react-icons/bi'
 import { IconContext } from 'react-icons'
 import { AppContext } from '../App.js'
 import { useContext }  from 'react'
@@ -71,6 +71,42 @@ export const EducationIconLarge = () => {
         justifyContent: 'center',
       }}>
         <BiSolidGraduation />
+      </div>
+    </IconContext.Provider>
+  );
+}
+
+export const SkillsIconSmall = () => {
+  const {selectedView} = useContext(AppContext); 
+
+  return (
+    <IconContext.Provider value={{ 
+      color: selectedView === 'skills' ? '#800000' : '#ffffff',
+      size: '30px',
+    }}>
+      <div style={{
+        display: 'flex',
+        justifyContent: 'center',
+      }}>
+        <BiSolidData />
+      </div>
+    </IconContext.Provider>
+  );
+}
+
+export const SkillsIconLarge = () => {
+  const {selectedView} = useContext(AppContext);
+
+  return (
+    <IconContext.Provider value={{ 
+      color: selectedView === 'skills' ? '#800000' : '#ffffff',
+      size: '60px',
+    }}>
+      <div style={{
+        display: 'flex',
+        justifyContent: 'center',
+      }}>
+        <BiSolidData />
       </div>
     </IconContext.Provider>
   );
