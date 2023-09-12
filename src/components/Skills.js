@@ -9,7 +9,7 @@ export const SkillsMobile = () => {
 
   return (
     <Container fluid style={{
-      marginTop: '80vh'
+      marginTop: '3vh'
     }}>
       <Row style={{textAlign: 'center'}}>
         <Col>
@@ -37,9 +37,6 @@ export const SkillsMobile = () => {
                 <RedDividerVertical/>
                 
                 <div className="card-contents">
-                  <p>Examples of skills?</p>
-                  <p>Where skill obtained?</p>
-                  <p>Is there a certificate?</p>
                   <p>Frontend</p>
                   <p>Backend</p>
                 </div>
@@ -83,9 +80,6 @@ export const SkillsDesktop = () => {
               <RedDividerHorizontal/>
                 
               <div>
-                <p>Examples of skills?</p>
-                <p>Where skill obtained?</p>
-                <p>Is there a certificate?</p>
                 <p>Frontend</p>
                 <p>Backend</p>
               </div>

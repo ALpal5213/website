@@ -26,14 +26,16 @@ const Home = () => {
   })
 
   return (
-    <Container fluid style={{ 
-      color: 'white',
-      }} id="top-page">
+    <Container fluid style={{ color: 'white' }} id="top-page">
       <div id="stars1" className="stars-background"></div>
       <div id="stars2" className="stars-background"></div>
       <div id="stars3" className="stars-background"></div>
-      <Row>
-        {isDesktop && <Col md={1}><NavbarLargeScreen/></Col>}
+      <Row style={{height: '100vh'}}>
+        {isDesktop && <>
+          <Col md={1}></Col>
+          <Col md={1} style={{position: 'fixed'}}><NavbarLargeScreen/></Col>
+          {/* <Col md={1}><NavbarLargeScreen/></Col> */}
+        </>}
         <Col xs={12} lg={3}>
           {isDesktop && <DesktopWelcome/>}
           {!isDesktop && <MobileWelcome/>}

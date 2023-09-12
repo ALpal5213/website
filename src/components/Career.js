@@ -9,7 +9,7 @@ export const CareerMobile = () => {
 
   return (
     <Container fluid style={{
-      marginTop: '80vh'
+      marginTop: '3vh'
     }}>
       <Row style={{textAlign: 'center'}}>
         <Col>

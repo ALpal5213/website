@@ -1,6 +1,6 @@
 body {
   background-color: #111111;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 80%, #111111 100%);
+  background: radial-gradient(ellipse at bottom, #3d2c2c 0%, #180505 80%, #111111 100%);
   background-attachment: fixed;
 }
 
@@ -24,6 +24,10 @@ body {
   width: 15px !important;
   height: 15px !important;
   border: solid 1px #000000 !important;
+}
+
+label {
+  cursor: pointer;
 }
 
 input[type="checkbox"] {
