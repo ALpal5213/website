@@ -23,7 +23,7 @@ body {
 .carousel-indicators > button.active {
   width: 15px !important;
   height: 15px !important;
-  border: solid 1px #000000 !important;
+  /* border: solid 1px #000000 !important; */
 }
 
 label {
