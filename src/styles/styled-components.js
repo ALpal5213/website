@@ -28,7 +28,7 @@ export const BriefcaseIconLarge = () => {
   return (
     <IconContext.Provider value={{ 
       color: selectedView === 'career' ? '#800000' : '#ffffff',
-      size: '60px',
+      size: '6vh',
     }}>
       <div style={{
         display: 'flex',
@@ -64,7 +64,7 @@ export const EducationIconLarge = () => {
   return (
     <IconContext.Provider value={{ 
       color: selectedView === 'education' ? '#800000' : '#ffffff',
-      size: '65px',
+      size: '6vh',
     }}>
       <div style={{
         display: 'flex',
@@ -100,7 +100,7 @@ export const SkillsIconLarge = () => {
   return (
     <IconContext.Provider value={{ 
       color: selectedView === 'skills' ? '#800000' : '#ffffff',
-      size: '60px',
+      size: '6vh',
     }}>
       <div style={{
         display: 'flex',
