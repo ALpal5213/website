@@ -26,40 +26,34 @@ const Home = () => {
   })
 
   return (
-    <Container fluid style={{ color: 'white' }} id="top-page">
-      <div id="stars1" className="stars-background"></div>
-      <div id="stars2" className="stars-background"></div>
-      <div id="stars3" className="stars-background"></div>
-      <Row style={{height: '100vh'}}>
-        {isDesktop && <>
-          <Col md={1}></Col>
-          <Col md={1} style={{position: 'fixed'}}><NavbarLargeScreen/></Col>
-          {/* <Col md={1}><NavbarLargeScreen/></Col> */}
-        </>}
-        <Col xs={12} lg={3}>
-          {isDesktop && <DesktopWelcome/>}
-          {!isDesktop && <MobileWelcome/>}
-        </Col>
-        <Col xs={12} lg={8} style={{
-          display: 'flex',
-          justifyContent: 'center',
-        }}>
-          {isDesktop && <MainCarouselDesktop/>}
-          {!isDesktop && <MainCarouselMobile/>}
-        </Col>
-      </Row>   
-      {!isDesktop &&<Row><NavbarSmallScreen/></Row>}
-      {selectedView != 'none' && !isDesktop && <Row>
-        {selectedView == 'career' && <CareerMobile/>}
-        {selectedView == 'education' && <EducationMobile/>}
-        {selectedView == 'skills' && <SkillsMobile/>}
-      </Row>}
-      {selectedView != 'none' && isDesktop && <Row id="top-content">
-        {selectedView == 'career' && <CareerDesktop/>}
-        {selectedView == 'education' && <EducationDesktop/>}
-        {selectedView == 'skills' && <SkillsDesktop/>}
-      </Row>}
-    </Container>
+    <div>
+      {isDesktop && <MainCarouselDesktop/>}
+      {!isDesktop && <MainCarouselMobile/>}
+      <Container fluid style={{ color: 'white' }} id="top-page">
+        <Row style={{height: '100vh'}}>
+          {isDesktop && <>
+            <Col md={1}></Col>
+            <Col md={1} style={{position: 'fixed'}}><NavbarLargeScreen/></Col>
+            {/* <Col md={1}><NavbarLargeScreen/></Col> */}
+          </>}
+          <Col xs={12} lg={3}>
+            {isDesktop && <DesktopWelcome/>}
+            {!isDesktop && <MobileWelcome/>}
+          </Col>
+        </Row>   
+        {!isDesktop &&<Row><NavbarSmallScreen/></Row>}
+        {selectedView != 'none' && !isDesktop && <Row>
+          {selectedView == 'career' && <CareerMobile/>}
+          {selectedView == 'education' && <EducationMobile/>}
+          {selectedView == 'skills' && <SkillsMobile/>}
+        </Row>}
+        {selectedView != 'none' && isDesktop && <Row id="top-content">
+          {selectedView == 'career' && <CareerDesktop/>}
+          {selectedView == 'education' && <EducationDesktop/>}
+          {selectedView == 'skills' && <SkillsDesktop/>}
+        </Row>}
+      </Container>
+    </div>
   );
 }
 

@@ -2,75 +2,91 @@ import { Container, Col, Row, Carousel } from 'react-bootstrap';
 import { AppContext } from '../App.js'
 import { useContext }  from 'react'
 
-const dev = "website/";
-
-export const MainCarouselMobile = () => {
+export const MainCarouselDesktop = () => {
   return (
-    <Carousel fade controls={false} variant={'dark'} style={{
-      overflow: 'hidden',
-      width: '80%',
-      height: '60vh',
-      boxShadow: '10px 5px 10px #000000',
-      borderRadius: '10px',
-      position: 'absolute',
-      bottom: '20px',
-      marginBottom: '20%',
-    }}>
-      <Carousel.Item style={{
-        position: 'relative',
-        left: '-25px'
+    <>
+      <Carousel 
+        fade 
+        controls={false}
+        indicators={false}
+        style={{
+          overflow: 'hidden',
+          height: '100vh',
+          zIndex: '-1',
+          position: 'absolute',
+          opacity: 0.75,
       }}>
-        <img 
-          // src="website/AdrianWithWifeMobile.jpg" 
-          src="AdrianWithWifeMobile.jpg" 
-          alt="Adrian With his Wife" 
-          width={'120%'}
-        />
-      </Carousel.Item>
-      <Carousel.Item style={{
-        position: 'relative',
-        left: '-25px'
-      }}>
-        <div>
+        <Carousel.Item interval={10000}>
           <img 
-            // src="website/AdrianSpeechMobile.jpg"
-            src="AdrianSpeechMobile.jpg" 
-            alt="Adrian Giving a Speech" 
-            width={'120%'}
+            src="AdrianWithWifeDesktop.jpg"
+            alt="Adrian With his Wife" 
+            width={'100%'}
           />
-        </div> 
-      </Carousel.Item>
-    </Carousel>
+        </Carousel.Item>
+        <Carousel.Item interval={10000}>
+          <img 
+            src="AdrianSpeechDesktop.jpg" 
+            alt="Adrian Giving a Speech" 
+            width={'100%'}
+          />
+        </Carousel.Item>
+      </Carousel>
+      <div style={{
+        width: '100%',
+        height: '15vh',
+        position: 'absolute',
+        bottom: 0,
+        backgroundImage: 'linear-gradient(to bottom, rgba(17,17,17,0), rgba(17,17,17,1) 100%)'
+      }}></div>
+    </>
+    
   );
 }
 
-export const MainCarouselDesktop = () => {
+export const MainCarouselMobile = () => {
   return (
-    <Carousel fade style={{
-      overflow: 'hidden',
-      width: '80%',
-      height: '25vw',
-      boxShadow: '10px 5px 10px black',
-      borderRadius: '10px',
-      marginTop: '25vh'
-    }}>
-      <Carousel.Item >
-        <img 
-          // src="website/AdrianWithWifeDesktop.jpg" 
-          src="AdrianWithWifeDesktop.jpg"
-          alt="Adrian With his Wife" 
-          width={'100%'}
-        />
-      </Carousel.Item>
-      <Carousel.Item >
-        <img 
-          // src="website/AdrianSpeechDesktop.jpg"
-          src="AdrianSpeechDesktop.jpg" 
-          alt="Adrian Giving a Speech" 
-          width={'100%'}
-        />
-      </Carousel.Item>
-    </Carousel>
+    <>
+      <Carousel 
+        fade 
+        controls={false} 
+        indicators={false}
+        style={{
+          overflow: 'hidden',
+          height: '100vh',
+          position: 'absolute',
+          opacity: 0.75
+      }}>
+        <Carousel.Item style={{
+          position: 'relative',
+          left: '-25px'
+        }}>
+          <img 
+            src="AdrianWithWifeMobile.jpg" 
+            alt="Adrian With his Wife" 
+            width={'120%'}
+          />
+        </Carousel.Item>
+        <Carousel.Item style={{
+          position: 'relative',
+          left: '-25px'
+        }}>
+          <div>
+            <img 
+              src="AdrianSpeechMobile.jpg" 
+              alt="Adrian Giving a Speech" 
+              width={'120%'}
+            />
+          </div> 
+        </Carousel.Item>
+      </Carousel>
+      <div style={{
+        width: '100%',
+        height: '20vh',
+        position: 'absolute',
+        bottom: 0,
+        backgroundImage: 'linear-gradient(to bottom, rgba(17,17,17,0), rgba(17,17,17,1) 50%)'
+      }}></div>
+    </>
   );
 }
 
