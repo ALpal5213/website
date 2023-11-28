@@ -1,5 +1,5 @@
 import { Container, Col, Row } from 'react-bootstrap'
-import { DevCarousel, PMCarousel, LeadershipCarousel } from '../components/Carousels.js';
+import { DevCarousel } from '../components/Carousels.js';
 import { AppContext } from '../App.js'
 import { useContext }  from 'react'
 import { RedDividerVertical, RedDividerHorizontal } from '../styles/styled-components.js'
@@ -9,7 +9,8 @@ export const SkillsMobile = () => {
 
   return (
     <Container fluid style={{
-      marginTop: '3vh'
+      marginTop: '3vh',
+      minHeight: '100vh'
     }}>
       <Row style={{textAlign: 'center'}}>
         <Col>
@@ -55,7 +56,8 @@ export const SkillsDesktop = () => {
 
   return (
     <Container fluid style={{
-      marginTop: '0vh'
+      marginTop: '5vh',
+      minHeight: '100vh'
     }}>
       <Row style={{textAlign: 'center'}}>
         <Col>
@@ -63,11 +65,14 @@ export const SkillsDesktop = () => {
         </Col>
       </Row>
       <Row style={{textAlign: 'center', marginBottom: '1%'}}>
+        <Col md={1}></Col>
         <Col>
           Through my career, my education, and my personal endeavors I have developed a diverse set of skills.
         </Col>
+        <Col md={1}></Col>
       </Row>
       <Row style={{marginBottom: '3%'}}>
+        <Col md={1}></Col>
         <Col style={{
           display: 'flex',
           justifyContent: 'center',
@@ -86,6 +91,7 @@ export const SkillsDesktop = () => {
             </div>
           </label>
         </Col>
+        <Col md={1}></Col>
       </Row>
       
     </Container>

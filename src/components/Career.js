@@ -9,7 +9,8 @@ export const CareerMobile = () => {
 
   return (
     <Container fluid style={{
-      marginTop: '3vh'
+      marginTop: '3vh',
+      minHeight: '100vh'
     }}>
       <Row style={{textAlign: 'center'}}>
         <Col>
@@ -100,7 +101,8 @@ export const CareerDesktop = () => {
 
   return (
     <Container fluid style={{
-      marginTop: '0vh'
+      marginTop: '5vh',
+      minHeight: '100vh'
     }}>
       <Row style={{textAlign: 'center'}}>
         <Col>
@@ -108,11 +110,14 @@ export const CareerDesktop = () => {
         </Col>
       </Row>
       <Row style={{textAlign: 'center', marginBottom: '1%'}}>
+        <Col md={1}></Col>
         <Col>
           My career has allowed me to foster connections, hone my skills, and develop new ones. Select a card below to learn more about my career.
         </Col>
+        <Col md={1}></Col>
       </Row>
       <Row style={{marginBottom: '3%'}}>
+        <Col md={1}></Col>
         <Col style={{
           display: 'flex',
           justifyContent: 'center',
@@ -143,8 +148,10 @@ export const CareerDesktop = () => {
             </div>
           </label>
         </Col>
+        <Col md={1}></Col>
       </Row>
       <Row style={{marginBottom: '3%'}}>
+        <Col md={1}></Col>
         <Col style={{
           display: 'flex',
           justifyContent: 'center',
@@ -173,6 +180,7 @@ export const CareerDesktop = () => {
             </div>
           </label>
         </Col>
+        <Col md={1}></Col>
       </Row>
     </Container>
   );

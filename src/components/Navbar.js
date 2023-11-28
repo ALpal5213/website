@@ -8,8 +8,6 @@ import {
   BriefcaseIconLarge, 
   EducationIconSmall,
   EducationIconLarge,
-  ContactIconSmall,
-  ContactIconLarge, 
   SkillsIconSmall,
   SkillsIconLarge,
 } from '../styles/styled-components.js'
@@ -48,8 +46,12 @@ export const NavbarSmallScreen = () => {
       </Row>
       <Row>
         <Col xs={4} onClick={() => {
-          selectedView === 'career' ? handleCloseScroll() : setSelectedView('career');
-          handleClickScroll();
+          if (selectedView === 'career') {
+            handleCloseScroll();
+          } else { 
+            setSelectedView('career');
+            handleClickScroll();
+          }   
         }}>{
           <div className='menu-icon-mobile' style={{
             color: selectedView === 'career' ? '#800000' : '#ffffff',
@@ -61,8 +63,12 @@ export const NavbarSmallScreen = () => {
           </div>
         }</Col>
         <Col xs={4} onClick={() => {
-          selectedView === 'education' ? handleCloseScroll() : setSelectedView('education');
-          handleClickScroll();
+          if (selectedView === 'education') {
+            handleCloseScroll();
+          } else { 
+            setSelectedView('education');
+            handleClickScroll();
+          }   
         }}>{
           <div className='menu-icon-mobile' style={{
             color: selectedView === 'education' ? '#800000' : '#ffffff',
@@ -74,8 +80,12 @@ export const NavbarSmallScreen = () => {
           </div>
         }</Col>
         <Col xs={4} onClick={() => {
-          selectedView === 'skills' ? handleCloseScroll() : setSelectedView('skills');
-          handleClickScroll();
+          if (selectedView === 'skills') {
+            handleCloseScroll();
+          } else { 
+            setSelectedView('skills');
+            handleClickScroll();
+          }   
         }}>{
           <div className='menu-icon-mobile' style={{
             color: selectedView === 'skills' ? '#800000' : '#ffffff',
@@ -136,8 +146,12 @@ export const NavbarLargeScreen = () => {
           <div 
             className='menu-icon-desktop' 
             onClick={() => {
-              selectedView === 'career' ? handleCloseScroll() : setSelectedView('career');
-              handleClickScroll();
+              if (selectedView === 'career') {
+                handleCloseScroll();
+              } else { 
+                setSelectedView('career');
+                handleClickScroll();
+              }            
             }}
             style={{
               color: selectedView === 'career' ? '#800000' : '#ffffff',
@@ -152,8 +166,12 @@ export const NavbarLargeScreen = () => {
           <div 
           className='menu-icon-desktop' 
           onClick={() => {
-            selectedView === 'education' ? handleCloseScroll() : setSelectedView('education');
-            handleClickScroll();
+            if (selectedView === 'education') {
+              handleCloseScroll();
+            } else { 
+              setSelectedView('education');
+              handleClickScroll();
+            }   
           }}
           style={{
             color: selectedView === 'education' ? '#800000' : '#ffffff',
@@ -168,8 +186,12 @@ export const NavbarLargeScreen = () => {
           <div 
           className='menu-icon-desktop' 
           onClick={() => {
-            selectedView === 'skills' ? handleCloseScroll() : setSelectedView('skills');
-            handleClickScroll();
+            if (selectedView === 'skills') {
+              handleCloseScroll();
+            } else { 
+              setSelectedView('skills');
+              handleClickScroll();
+            }   
           }}
           style={{
             color: selectedView === 'skills' ? '#800000' : '#ffffff',

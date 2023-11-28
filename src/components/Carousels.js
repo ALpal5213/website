@@ -1,4 +1,4 @@
-import { Container, Col, Row, Carousel } from 'react-bootstrap';
+import { Carousel } from 'react-bootstrap';
 import { AppContext } from '../App.js'
 import { useContext }  from 'react'
 
@@ -14,13 +14,14 @@ export const MainCarouselDesktop = () => {
           height: '100vh',
           zIndex: '-1',
           position: 'absolute',
-          opacity: 0.75,
+          opacity: 0.80,
       }}>
         <Carousel.Item interval={10000}>
           <img 
             src="AdrianWithWifeDesktop.jpg"
             alt="Adrian With his Wife" 
             width={'100%'}
+            // height={'100%'}
           />
         </Carousel.Item>
         <Carousel.Item interval={10000}>
@@ -28,6 +29,7 @@ export const MainCarouselDesktop = () => {
             src="AdrianSpeechDesktop.jpg" 
             alt="Adrian Giving a Speech" 
             width={'100%'}
+            // height={'100%'}
           />
         </Carousel.Item>
       </Carousel>
@@ -64,6 +66,7 @@ export const MainCarouselMobile = () => {
             src="AdrianWithWifeMobile.jpg" 
             alt="Adrian With his Wife" 
             width={'120%'}
+            
           />
         </Carousel.Item>
         <Carousel.Item style={{

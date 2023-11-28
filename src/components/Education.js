@@ -9,7 +9,8 @@ export const EducationMobile = () => {
 
   return (
     <Container fluid style={{
-      marginTop: '3vh'
+      marginTop: '3vh',
+      minHeight: '100vh'
     }}>
       <Row style={{textAlign: 'center'}}>
         <Col>
@@ -86,7 +87,8 @@ export const EducationDesktop = () => {
 
   return (
     <Container fluid style={{
-      marginTop: '0vh'
+      marginTop: '5vh',
+      minHeight: '100vh'
     }}>
       <Row style={{textAlign: 'center'}}>
         <Col>
@@ -94,11 +96,14 @@ export const EducationDesktop = () => {
         </Col>
       </Row>
       <Row style={{textAlign: 'center', marginBottom: '1%'}}>
+        <Col md={1}></Col>
         <Col>
           My education has played a huge role in making me who I am today as well as developing the skills I now possess. Select a card below to learn more about my educational background.
         </Col>
+        <Col md={1}></Col>
       </Row>
       <Row style={{marginBottom: '3%'}}>
+        <Col md={1}></Col>
         <Col style={{
           display: 'flex',
           justifyContent: 'center',
@@ -118,8 +123,10 @@ export const EducationDesktop = () => {
             </div>
           </label>
         </Col>
+        <Col md={1}></Col>
       </Row>
       <Row style={{marginBottom: '3%'}}>
+        <Col md={1}></Col>
         <Col style={{
           display: 'flex',
           justifyContent: 'center',
@@ -143,6 +150,7 @@ export const EducationDesktop = () => {
             </div>
           </label>
         </Col>
+        <Col md={1}></Col>
       </Row>
     </Container>
   );
