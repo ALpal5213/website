@@ -14,12 +14,14 @@ function App() {
       selectedView, setSelectedView,
       selectedItem, setSelectedItem
     }}>
-      <HashRouter >
+      <Router basename={process.env.PUBLIC_URL}>
+      {/* <HashRouter> */}
         <Routes>
-          <Route path="/" exact element={<Home/>}/>
-          <Route path="/*" exact element={<Page404/>}/>
+          <Route path='' element={<Home/>}/>
+          <Route path='/*' element={<Page404/>}/>
         </Routes>
-      </HashRouter>
+      {/* </HashRouter> */}
+      </Router>
     </AppContext.Provider>
   );
 }
