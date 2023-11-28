@@ -18,6 +18,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/*' element={<Page404/>}/>
+          <Route path='/test' element={<Page404/>}/>
         </Routes>
       </Router>
     </AppContext.Provider>
