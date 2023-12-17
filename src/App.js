@@ -1,5 +1,5 @@
 import { createContext, useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, HashRouter, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, HashRouter } from 'react-router-dom'
 import Home from './pages/Home.js'
 import Page404 from './pages/Page404.js'
 
